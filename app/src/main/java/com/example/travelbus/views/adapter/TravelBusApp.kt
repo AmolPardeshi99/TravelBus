@@ -5,4 +5,5 @@ import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
 class TravelBusApp:Application() {
+
 }
