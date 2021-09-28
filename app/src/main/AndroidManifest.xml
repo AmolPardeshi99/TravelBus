@@ -10,14 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TravelBus">
         <activity
-            android:name=".views.adapter.activities.MainActivity"
-            android:exported="true">
+            android:name=".views.adapter.activities.SplashScreenActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".views.adapter.activities.MainActivity"
+            android:exported="true">
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

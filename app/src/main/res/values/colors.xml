@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+<!--    colours given  by UI-UX team -->
+    <color name="materialRed">#D74E55</color>  <!-- primary colour -->
+    <color name="accent">#1133DB</color>
+
+
 </resources>
