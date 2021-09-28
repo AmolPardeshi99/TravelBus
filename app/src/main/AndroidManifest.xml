@@ -10,9 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TravelBus">
         <activity
-            android:name=".views.adapter.activities.SplashScreenActivity"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
-            android:exported="true" >
+            android:name=".views.adapter.activities.HomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,10 +20,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".views.adapter.activities.MainActivity"
-            android:exported="true">
+            android:name=".views.adapter.activities.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
 
-        </activity>
+        <activity
+            android:name=".views.adapter.activities.MainActivity"
+            android:exported="true"/>
 
         <meta-data
             android:name="preloaded_fonts"
