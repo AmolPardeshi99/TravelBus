@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TravelBus">
         <activity
+            android:name=".views.adapter.activities.OnBoardingActivity"
+            android:exported="true" />
+        <activity
             android:name=".views.adapter.activities.SplashScreenActivity"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
