@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/ic_redbuslogo_splash.xml" value="0.2703125" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_country__language.xml" value="0.22007722007722008" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/login_screen.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
