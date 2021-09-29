@@ -3,14 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/account_btn_more_design.xml" value="0.275" />
         <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/edit_text_design.xml" value="0.290625" />
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/ic_arrow_next.xml" value="0.290625" />
         <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/ic_enter_source.xml" value="0.290625" />
         <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/activity_home.xml" value="0.176" />
         <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
         <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/activity_splash_screen.xml" value="0.27447916666666666" />
         <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_country__language.xml" value="0.27447916666666666" />
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_help.xml" value="0.4" />
         <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_home.xml" value="0.4" />
-        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_my_account.xml" value="0.27447916666666666" />
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_my_account.xml" value="0.264" />
         <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/menu/bottom_menu.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
       </map>
