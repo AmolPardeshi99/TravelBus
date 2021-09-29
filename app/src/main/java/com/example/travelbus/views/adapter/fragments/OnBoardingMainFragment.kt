@@ -27,7 +27,8 @@ class OnBoardingMainFragment : Fragment(R.layout.fragment_on_boarding_main), Tab
 
         // navigation for next fragment
         btnJoin.setOnClickListener {
-            navController.navigate(R.id.action_onBoardingMainFragment_to_loginFragment)
+            navController.navigate(R.id.action_onBoardingMainFragment_to_signupOrLoginFragment)
+
         }
     }
 

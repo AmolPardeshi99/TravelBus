@@ -1,5 +1,6 @@
 package com.example.travelbus.views.adapter.fragments
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.os.SystemClock
@@ -8,6 +9,7 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.annotation.RequiresApi
 import com.example.travelbus.R
+import com.example.travelbus.views.adapter.activities.HomeActivity
 import kotlinx.android.synthetic.main.fragment_otp.*
 import kotlinx.coroutines.*
 
@@ -38,6 +40,12 @@ class OtpFragment : Fragment(R.layout.fragment_otp) {
         var term3: String = getColoredSpanned(and, "#BFC0C2")
         var term4: String = getColoredSpanned(privacyPolicy, "#1133DB")
         tvTermCondtnOtp.setText(Html.fromHtml(term1 + term2 + term3 + term4))
+
+
+
+        btnConfirmOtp.setOnClickListener {
+            startActivity(Intent(activity?.applicationContext, HomeActivity::class.java))
+        }
     }
 
     @RequiresApi(Build.VERSION_CODES.N)
