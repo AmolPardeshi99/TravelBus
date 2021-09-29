@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
 import com.example.travelbus.R
@@ -16,12 +18,17 @@ import com.google.android.material.tabs.TabLayoutMediator.TabConfigurationStrate
 import kotlinx.android.synthetic.main.fragment_on_boarding_main.*
 
 class OnBoardingMainFragment : Fragment(R.layout.fragment_on_boarding_main), TabLayout.OnTabSelectedListener {
-
-
+    lateinit var navController: NavController
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setViewPagerAdapter()
+        navController = Navigation.findNavController(view)
+
+        // navigation for next fragment
+        btnJoin.setOnClickListener {
+            navController.navigate(R.id.action_onBoardingMainFragment_to_loginFragment)
+        }
     }
 
 

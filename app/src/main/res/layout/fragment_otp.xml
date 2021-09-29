@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.adapter.fragments.OtpFragment">
+
+    <TextView
+        android:id="@+id/tvVerficationHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/materialRed"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingEnd="45dp"
+        android:text="Verification"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:drawableStartCompat="@drawable/ic_back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/ivLoginImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/materialRed"
+        android:padding="15dp"
+        android:src="@drawable/otp_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvVerficationHeading" />
+
+    <TextView
+        android:id="@+id/tvLoginUsing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="@string/login_using_otp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLoginImage" />
+
+    <TextView
+        android:id="@+id/tvEnterMoNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Enter Mobile Number"
+        android:textColor="@color/materialRed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLoginUsing" />
+
+
+    <LinearLayout
+        android:id="@+id/OtpLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEnterMoNum">
+
+        <EditText
+            android:id="@+id/etOtp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:gravity="center"
+            android:background="@drawable/otp_box"
+            android:inputType="numberDecimal"
+            android:maxLength="1"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:fontFamily="@font/montserrat"
+            android:hint="0"
+            android:padding="5dp" />
+        <EditText
+            android:id="@+id/etOtp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:gravity="center"
+            android:background="@drawable/otp_box"
+            android:inputType="numberDecimal"
+            android:maxLength="1"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="yes"
+            android:fontFamily="@font/montserrat"
+            android:hint="0"
+            android:padding="5dp" />
+        <EditText
+            android:id="@+id/etOtp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:gravity="center"
+            android:background="@drawable/otp_box"
+            android:inputType="numberDecimal"
+            android:maxLength="1"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="yes"
+            android:fontFamily="@font/montserrat"
+            android:hint="0"
+            android:padding="5dp" />
+        <EditText
+            android:id="@+id/etOtp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:gravity="center"
+            android:background="@drawable/otp_box"
+            android:inputType="numberDecimal"
+            android:maxLength="1"
+            android:fontFamily="@font/montserrat"
+            android:hint="0"
+            android:padding="5dp" />
+        <EditText
+            android:id="@+id/etOtp5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:gravity="center"
+            android:background="@drawable/otp_box"
+            android:inputType="numberDecimal"
+            android:maxLength="1"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="yes"
+            android:fontFamily="@font/montserrat"
+            android:hint="0"
+            android:padding="5dp" />
+        <EditText
+            android:id="@+id/etOtp6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:gravity="center"
+            android:background="@drawable/otp_box"
+            android:inputType="numberDecimal"
+            android:maxLength="1"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="yes"
+            android:fontFamily="@font/montserrat"
+            android:hint="0"
+            android:padding="5dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvrelaxOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/relax_we_will_automatically_validate_otp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/OtpLayout" />
+
+
+    <TextView
+        android:id="@+id/tvresendOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/resend_otp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvrelaxOtp" />
+
+
+    <Chronometer
+        android:id="@+id/view_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_clock_icon"
+        android:textColor="@color/light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvresendOtp"
+        tools:targetApi="24" />
+
+    <TextView
+        android:id="@+id/tvTermCondtnOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:text="@string/term_and_condition"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnConfirmOtp" />
+
+    <Button
+        android:id="@+id/btnConfirmOtp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/confirm"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

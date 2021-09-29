@@ -14,11 +14,7 @@
             android:exported="true" />
         <activity
             android:name=".views.adapter.activities.SplashScreenActivity"
-            android:exported="true" />
-        <activity
-            android:name=".views.adapter.activities.HomeActivity"
-            android:exported="true"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,9 +22,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".views.adapter.activities.SplashScreenActivity"
-            android:exported="true"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
+            android:name=".views.adapter.activities.HomeActivity"
+            android:exported="true">
+
+        </activity>
 
         <activity
             android:name=".views.adapter.activities.MainActivity"

@@ -13,5 +13,6 @@
     <color name="accent">#1133DB</color>
     <color name="grey">#E5E5E5</color>
     <color name="dark_grey">#6E7275</color>
+    <color name="light_grey">#9FA1A3</color>
 
 </resources>

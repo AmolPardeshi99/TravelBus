@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".views.adapter.fragments.LoginFragment">
+    tools:context=".views.adapter.fragments.SignUpFragment">
 
     <TextView
         android:id="@+id/tvLoginHeading"
@@ -16,7 +16,7 @@
         android:gravity="center"
         android:padding="10dp"
         android:paddingEnd="45dp"
-        android:text="@string/login"
+        android:text="SignUp"
         android:textColor="@color/white"
         android:textSize="25sp"
         app:drawableStartCompat="@drawable/ic_back_button"
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:background="@color/materialRed"
         android:padding="15dp"
-        android:src="@drawable/login_frame"
+        android:src="@drawable/sign_up_frame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvLoginHeading" />
@@ -51,6 +51,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivLoginImage" />
 
+
     <TextView
         android:id="@+id/tvEnterMoNum"
         android:layout_width="wrap_content"
@@ -60,7 +61,7 @@
         android:text="Enter Mobile Number"
         android:textColor="@color/materialRed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvLoginUsing" />
+        app:layout_constraintTop_toBottomOf="@id/tvLoginUsing"/>
 
 
     <EditText
@@ -78,6 +79,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvEnterMoNum" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:text="I have a referral code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMobileNo" />
+
+
+    <EditText
+        android:id="@+id/etReferralCode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/rectangle_border"
+        android:drawableStart="@drawable/ic_referral_icon"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Referral Code"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBox" />
+
 
 
     <TextView
@@ -98,12 +129,13 @@
         android:layout_height="60dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginBottom="25dp"
-        android:text="@string/log_in"
+        android:text="Sign Up"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_onboarding"
+    app:startDestination="@id/country_LanguageFragment">
+
+    <fragment
+        android:id="@+id/country_LanguageFragment"
+        android:name="com.example.travelbus.views.adapter.fragments.Country_LanguageFragment"
+        android:label="fragment_country__language"
+        tools:layout="@layout/fragment_country__language">
+        <action
+            android:id="@+id/action_country_LanguageFragment_to_onBoardingMainFragment"
+            app:destination="@id/onBoardingMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.travelbus.views.adapter.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingMainFragment"
+        android:name="com.example.travelbus.views.adapter.fragments.OnBoardingMainFragment"
+        android:label="fragment_on_boarding_main"
+        tools:layout="@layout/fragment_on_boarding_main">
+        <action
+            android:id="@+id/action_onBoardingMainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.example.travelbus.views.adapter.fragments.OtpFragment"
+        android:label="fragment_otp"
+        tools:layout="@layout/fragment_otp" />
+</navigation>

@@ -28,7 +28,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/montserrat"
-            android:text="Country"
+            android:text="@string/country"
             android:textColor="@color/materialRed" />
 
         <com.google.android.material.card.MaterialCardView
@@ -48,13 +48,13 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:drawableEnd="@drawable/ic_dropdown_icon"
                     android:fontFamily="@font/montserrat"
                     android:gravity="center_vertical"
-                    android:text="India"
+                    android:text="@string/india"
                     android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:drawableEndCompat="@drawable/ic_dropdown_icon" />
 
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
@@ -66,7 +66,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/montserrat"
-            android:text="Language"
+            android:text="@string/language"
             android:textColor="@color/materialRed" />
 
         <com.google.android.material.card.MaterialCardView
@@ -99,9 +99,11 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnContinue"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:fontFamily="@font/montserrat"
-        android:text="Continue" />
+        android:text="Continue"
+        tools:ignore="InvalidId" />
 
 </LinearLayout>

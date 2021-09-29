@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".views.adapter.fragments.OnBoardingMainFragment">
 
-
     <ImageButton
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
@@ -92,6 +91,5 @@
         android:layout_width="0dp"
         android:layout_marginTop="-2dp"
         android:layout_height="2dp"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
