@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:textSize="15sp"
+        android:fontFamily="@font/montserrat"
         android:textColor="@color/black"
         android:layout_marginEnd="16dp"
         android:text="Skip"
@@ -59,6 +60,7 @@
     <Button
         android:id="@+id/btnJoin"
         android:text="Join"
+        android:fontFamily="@font/montserrat"
         android:textSize="17sp"
         android:textStyle="bold"
         android:layout_width="0dp"
@@ -75,6 +77,7 @@
         android:paddingHorizontal="2dp"
         android:textSize="17sp"
         android:textStyle="bold"
+        android:fontFamily="@font/montserrat"
         android:textColor="@color/black"
         android:layout_marginBottom="35dp"
         app:layout_constraintStart_toStartOf="parent"
