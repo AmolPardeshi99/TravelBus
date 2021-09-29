@@ -1,12 +1,12 @@
 package com.example.travelbus.views.adapter.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.travelbus.R
+import com.example.travelbus.base.BaseActivity
 
-class OnBoardingActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_on_boarding)
+class OnBoardingActivity : BaseActivity() {
+    override fun provideLayoutId(): Int = R.layout.activity_on_boarding
+
+    override fun setupView(savedInstanceState: Bundle?) {
     }
 }

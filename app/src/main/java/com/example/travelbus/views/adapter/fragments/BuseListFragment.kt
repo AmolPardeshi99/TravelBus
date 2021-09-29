@@ -9,5 +9,4 @@ import com.example.travelbus.R
 
 class BuseListFragment : Fragment(R.layout.fragment_buse_list) {
 
-
 }

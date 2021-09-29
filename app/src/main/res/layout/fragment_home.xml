@@ -179,7 +179,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:drawableTop="@drawable/ic_bus"
-                    android:paddingHorizontal="60dp"
+                    android:paddingHorizontal="55dp"
                     android:paddingVertical="14dp"
                     android:text="Bus Hire " />
             </androidx.cardview.widget.CardView>
@@ -200,7 +200,7 @@
                     android:layout_height="match_parent"
                     android:drawableTop="@drawable/ic_car"
                     android:gravity="center"
-                    android:paddingHorizontal="60dp"
+                    android:paddingHorizontal="55dp"
                     android:paddingVertical="14dp"
                     android:text="    rPool    " />
             </androidx.cardview.widget.CardView>
@@ -209,7 +209,7 @@
                 android:id="@+id/cvFood"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="18dp"
                 app:cardCornerRadius="4dp"
                 app:cardElevation="12dp"
                 app:cardMaxElevation="12dp"
@@ -220,7 +220,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:drawableTop="@drawable/ic_food_fun"
-                    android:paddingHorizontal="60dp"
+                    android:paddingHorizontal="55dp"
                     android:paddingVertical="14dp"
                     android:text="Food Fun" />
             </androidx.cardview.widget.CardView>
@@ -230,7 +230,7 @@
                 android:id="@+id/cvPackages"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="18dp"
                 app:cardCornerRadius="4dp"
                 app:cardElevation="12dp"
                 app:cardMaxElevation="12dp"
@@ -241,7 +241,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:drawableTop="@drawable/ic_packeges"
-                    android:paddingHorizontal="60dp"
+                    android:paddingHorizontal="55dp"
                     android:paddingVertical="14dp"
                     android:text="Packages" />
             </androidx.cardview.widget.CardView>
@@ -303,12 +303,12 @@
                     <ImageView
                         android:layout_width="300dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/img_1" />
+                        android:src="@drawable/homecard1" />
 
                     <ImageView
                         android:layout_width="300dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/img_2" />
+                        android:src="@drawable/homecard4" />
                 </LinearLayout>
             </HorizontalScrollView>
 
@@ -330,12 +330,12 @@
                     <ImageView
                         android:layout_width="300dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/img_3" />
+                        android:src="@drawable/homecard2" />
 
                     <ImageView
                         android:layout_width="300dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/img_4" />
+                        android:src="@drawable/homecard3" />
                 </LinearLayout>
             </HorizontalScrollView>
         </androidx.constraintlayout.widget.ConstraintLayout>

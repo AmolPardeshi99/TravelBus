@@ -4,8 +4,8 @@ plugins {
     id 'kotlin-kapt'
     id 'kotlin-android-extensions'
 
-    id 'dagger.hilt.android.plugin'
     id 'com.google.gms.google-services'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -38,9 +38,14 @@ android {
 
 dependencies {
 
+
     //firebase
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'com.google.firebase:firebase-auth-ktx:21.0.1'
+    implementation platform('com.google.firebase:firebase-bom:28.4.0')
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation 'androidx.browser:browser:1.3.0'
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+
 
     def anko_version = '0.10.0'
 
