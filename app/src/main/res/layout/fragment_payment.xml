@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_with_dark"
+    tools:context=".views.adapter.fragments.PaymentFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/materialRed"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_back_arrow_grey"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/montserrat"
+                android:text="Select a payment option"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvToolbarTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="06:56"
+                android:textColor="@color/light_yellow"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/TopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/materialRed"
+        android:paddingStart="14dp"
+        android:paddingTop="14dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <TextView
+            android:id="@+id/tvStartingPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Pune"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_next_arrow"
+            app:layout_constraintBottom_toBottomOf="@id/tvStartingPoint"
+            app:layout_constraintEnd_toStartOf="@id/tvEndingPoint"
+            app:layout_constraintStart_toEndOf="@id/tvStartingPoint"
+            app:layout_constraintTop_toTopOf="@id/tvStartingPoint" />
+
+        <TextView
+            android:id="@+id/tvEndingPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Mumbai"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat"
+            android:text="17:20"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStartingPoint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat"
+            android:text="2 hr 45 mins"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvStartTime"
+            app:layout_constraintEnd_toStartOf="@id/tvEndingTime"
+            app:layout_constraintStart_toEndOf="@id/tvStartTime"
+            app:layout_constraintTop_toTopOf="@id/tvStartTime" />
+
+        <TextView
+            android:id="@+id/tvEndingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat"
+            android:text="20:05"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStartingPoint" />
+
+        <TextView
+            android:id="@+id/tvStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Sep 22, 2021"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStartTime" />
+
+        <TextView
+            android:id="@+id/tvEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Sep 22, 2021"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStartTime" />
+
+
+        <TextView
+            android:id="@+id/tvPayLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Pay"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStartDate" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
+            android:text="₹ 299.0"
+            android:textColor="@color/light_yellow"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tvPayLabel"
+            app:layout_constraintTop_toBottomOf="@id/tvStartDate" />
+
+
+        <TextView
+            android:id="@+id/tvViewDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@drawable/ic_dropdown"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/montserrat"
+            android:text="View Details"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStartDate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/grey_with_dark"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TopBar">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvOfferCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp">
+
+                <EditText
+                    android:id="@+id/etOfferCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Enter offer code"
+                    android:textColorHint="@color/light_grey_2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnApply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/light_black"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingHorizontal="25dp"
+                    android:paddingVertical="8dp"
+                    android:text="Apply"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvCreditCard"
+            android:layout_width="170dp"
+            android:layout_height="128dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="12dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvOfferCode">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_card_credit"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/dark_grey"
+                    android:text="Debit, Credit Card" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvUpi"
+            android:layout_width="170dp"
+            android:layout_height="128dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="12dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvOfferCode">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_bhim_upi"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/dark_grey"
+                    android:text="Debit, Credit Card" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvBanking"
+            android:layout_width="170dp"
+            android:layout_height="128dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="12dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvCreditCard">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_banking"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/dark_grey"
+                    android:text="Debit, Credit Card" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvWallet"
+            android:layout_width="170dp"
+            android:layout_height="128dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="12dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvCreditCard">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_wallet"
+                    app:tint="#6E7275" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/dark_grey"
+                    android:text="Debit, Credit Card" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

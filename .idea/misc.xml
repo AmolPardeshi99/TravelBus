@@ -3,6 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/bottom_sheet_rounded.xml" value="0.24473684210526317" />
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/ic_google_pay.xml" value="0.24473684210526317" />
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/ic_mail.xml" value="0.24473684210526317" />
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/ic_next_arrow.xml" value="0.24473684210526317" />
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/ic_payment_logo.xml" value="0.24473684210526317" />
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/ic_paytm_logo.xml" value="0.24473684210526317" />
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/ic_phone.xml" value="0.24473684210526317" />
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/ic_whatsapp_logo.xml" value="0.24473684210526317" />
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/bottom_upi_layout.xml" value="0.264" />
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_home.xml" value="0.4" />
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_passenger_details.xml" value="0.4" />
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_payment.xml" value="0.264" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/ic_back_button.xml" value="0.2703125" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/ic_rectangle.xml" value="0.2703125" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/otp_box.xml" value="0.2703125" />
