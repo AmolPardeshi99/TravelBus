@@ -20,6 +20,8 @@ class HomeActivity : AppCompatActivity(), PlacesAdapter.ClickListener {
         setContentView(R.layout.activity_home)
 
         setBottomNavigation()
+
+
     }
 
 

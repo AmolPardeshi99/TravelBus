@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.FragmentManager
 import com.example.travelbus.R
 import com.example.travelbus.views.adapter.adapters.PlacesAdapter
 import kotlinx.android.synthetic.main.fragment_home.*
@@ -55,6 +56,10 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
         }
         etEnterDestination.setOnClickListener {
             clickListener.destinationSearchClicked(etEnterSource.text.toString(), etEnterDestination.text.toString())
+        }
+
+        btnSearch.setOnClickListener {
+
         }
     }
 }
