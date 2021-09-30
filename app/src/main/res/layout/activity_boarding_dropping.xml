@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.adapter.activities.BoardingDroppingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/materialRed"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_back_arrow_grey"
+            android:drawablePadding="15dp"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/montserrat"
+            android:text="Pune to Mumbai"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+
+        <TextView
+            android:id="@+id/tvBoarding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Boarding"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Add Location"
+            app:layout_constraintEnd_toEndOf="@id/tvBoarding"
+            app:layout_constraintStart_toStartOf="@id/tvBoarding"
+            app:layout_constraintTop_toBottomOf="@id/tvBoarding" />
+
+        <View
+            android:id="@+id/viewPartition"
+            android:layout_width="3dp"
+            android:layout_height="0dp"
+            android:background="#DBDCDC"
+            app:layout_constraintBottom_toTopOf="@id/viewHoriZontal1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Add Location"
+            app:layout_constraintEnd_toEndOf="@id/tvDropping"
+            app:layout_constraintStart_toStartOf="@id/tvDropping"
+            app:layout_constraintTop_toBottomOf="@id/tvDropping" />
+
+
+        <TextView
+            android:id="@+id/tvDropping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Dropping"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@id/viewPartition"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/viewHoriZontal1"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:background="#D74E55"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/viewPartition"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/viewHoriZontal2"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:background="#D74E55"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/viewPartition" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerBoardingList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

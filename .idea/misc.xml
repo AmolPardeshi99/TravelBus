@@ -10,10 +10,14 @@
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/selected_pager_dot.xml" value="0.2703125" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/selector_box.xml" value="0.2703125" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/selector_match_team.xml" value="0.2703125" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_boarding_dropping.xml" value="0.4" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_bus_booking.xml" value="0.21403508771929824" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_on_boarding.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/boardinglist_itemlayout.xml" value="0.2" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_boarding_dropping.xml" value="0.21403508771929824" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_buse_list.xml" value="0.4" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_country__language.xml" value="0.264" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_help.xml" value="0.25416666666666665" />
@@ -26,7 +30,7 @@
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_sign_up.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_signup_or_login.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_splash_screen.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/itemlayout_bus.xml" value="0.2" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/itemlayout_bus.xml" value="0.4" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/onboarding_custom_layout.xml" value="0.25416666666666665" />
       </map>
     </option>

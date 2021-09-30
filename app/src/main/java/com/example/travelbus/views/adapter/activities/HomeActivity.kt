@@ -5,10 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.travelbus.R
 import com.example.travelbus.base.BaseActivity
-import com.example.travelbus.views.adapter.fragments.HelpFragment
-import com.example.travelbus.views.adapter.fragments.HomeFragment
-import com.example.travelbus.views.adapter.fragments.MyAccountFragment
-import com.example.travelbus.views.adapter.fragments.MyBookingsFragment
+import com.example.travelbus.views.adapter.fragments.*
 import com.google.android.material.navigation.NavigationBarView
 import kotlinx.android.synthetic.main.activity_home.*
 

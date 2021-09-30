@@ -40,7 +40,6 @@ class OtpFragment : Fragment(R.layout.fragment_otp) {
         auth = Firebase.auth
         getIntentData()
         sendVerificationCode()
-
         btnConfirmOtp.setOnClickListener {
             var otp=""
                 otp += etOtp1.text
