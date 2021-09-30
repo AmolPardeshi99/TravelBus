@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_with_dark"
+    tools:context=".views.adapter.fragments.PassengerDetailsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/materialRed"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_back_arrow_grey"
+            android:drawablePadding="15dp"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/montserrat"
+            android:text="Pune to Mumbai"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/cardBottomToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey1"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <TextView
+            android:id="@+id/tvLabelBusOnRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Bus on Route"
+            android:textColor="@color/dark_grey" />
+
+        <TextView
+            android:id="@+id/tvLabelNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLabelBusOnRoute"
+            android:fontFamily="@font/montserrat"
+            android:text="Next: "
+            android:textColor="@color/dark_grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLabelBusOnRoute"
+            android:layout_toRightOf="@id/tvLabelNext"
+            android:fontFamily="@font/montserrat"
+            android:text="Railway Station"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/montserrat"
+            android:text="Your boarding point"
+            android:textColor="@color/dark_grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLabelBusOnRoute"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/montserrat"
+            android:text="Railway Station"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardBottomToolbar"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp">
+
+            <TextView
+                android:id="@+id/tvLabelContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Contact Information"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLabelContact"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardMaxElevation="12dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:paddingVertical="30dp"
+                    android:paddingHorizontal="16dp">
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_mail"
+                        android:drawablePadding="20dp"
+                        android:hint="Email ID"
+                        android:padding="12dp"
+                        android:textColorHint="@color/light_grey_2"
+                        android:drawableTint="@color/light_grey"
+                        android:backgroundTint="@color/light_grey_2"
+                        android:fontFamily="@font/montserrat"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/etEnterMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_phone"
+                        android:drawablePadding="20dp"
+                        android:padding="12dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:backgroundTint="@color/light_grey_2"
+                        android:textColorHint="@color/light_grey_2"
+                        android:drawableTint="@color/light_grey"
+                        android:hint="Mobile Number"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+                    <TextView
+                        android:id="@+id/tvWhatsappPermissionLabel"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_whatsapp_logo"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:text="Send booking details and updates on Whatsapp number 8618837172"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/etEnterMobile"
+                        android:layout_marginTop="10dp"/>
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        app:thumbTint="@color/materialRed"
+                        app:trackTint="@color/switch_track"
+                        android:buttonTintMode="@color/materialRed"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/etEnterMobile"
+
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/tvLabelPassengerInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Passenger Information"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvContact"
+                />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvPassengerInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLabelPassengerInfo"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardMaxElevation="12dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:paddingVertical="30dp"
+                    android:paddingHorizontal="16dp">
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:padding="12dp"
+                        android:textColorHint="@color/light_grey_2"
+                        android:backgroundTint="@color/light_grey_2"
+                        android:fontFamily="@font/montserrat"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/etAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:backgroundTint="@color/light_grey_2"
+                        android:textColorHint="@color/light_grey_2"
+                        android:hint="Age"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/etName" />
+
+                    <TextView
+                        android:id="@+id/tvGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textSize="17sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/light_grey_2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/etAge"/>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvGender">
+
+                        <!-- In RadioGroup create the 1 Radio Button-->
+                        <!-- like this we will add some more Radio Button-->
+                        <RadioButton
+                            android:id="@+id/rdMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7"
+                            android:text="Male"
+                            android:padding="3dp"
+                            android:buttonTint="@color/grey_3_radio"
+                            android:textColor="@color/light_grey"
+                            android:textSize="18dp"/>
+
+                        <RadioButton
+                            android:id="@+id/rdFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7"
+                            android:text="Female"
+                            android:padding="3dp"
+                            android:buttonTint="@color/grey_3_radio"
+                            android:textColor="@color/light_grey"
+                            android:textSize="18dp"/>
+
+
+                        <RadioButton
+                            android:id="@+id/rdOther"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7"
+                            android:text="Other"
+                            android:padding="3dp"
+                            android:buttonTint="@color/grey_3_radio"
+                            android:textColor="@color/light_grey"
+                            android:textSize="18dp"/>
+
+
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cvGstInvoice"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               app:cardElevation="8dp"
+               app:cardMaxElevation="12dp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/cvPassengerInfo">
+
+               <CheckBox
+                   android:id="@+id/checkBox2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/montserrat"
+                   android:textSize="15sp"
+                   android:padding="10dp"
+                   android:layout_marginLeft="14dp"
+                   android:text="I want GST invoice for this travel" />
+           </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvGstInvoice"
+                android:src="@drawable/img_passenger_info_card"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvBookingPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/bottomBar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:text="₹ 299.0"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/materialRed"
+            android:drawableRight="@drawable/ic_add_with_border"
+            android:drawablePadding="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvBookingPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="(Excluding taxes)"
+            android:textSize="12sp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/light_grey"
+            android:drawablePadding="10dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnProceed"
+            android:layout_width="140dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bottomBar"
+            app:layout_constraintBottom_toBottomOf="@id/bottomBar"
+            android:fontFamily="@font/montserrat"
+            android:layout_alignParentEnd="true"
+            app:cornerRadius="0dp"
+            android:text="PROCEED"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
