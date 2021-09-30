@@ -26,7 +26,7 @@ import java.util.concurrent.ExecutionException
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
 
-class PlacesAdapter(private val mContext: Context, val clickListener: ClickListener) :
+class PlacesAdapter(private val mContext: Context, val clickListener: ClickListener,val sourceDestinationFlag: Int) :
     RecyclerView.Adapter<PlacesAdapter.PredictionHolder>(), Filterable {
     private var mResultList: ArrayList<PlaceAutocomplete>? = ArrayList()
     private val STYLE_BOLD: CharacterStyle
@@ -175,7 +175,7 @@ class PlacesAdapter(private val mContext: Context, val clickListener: ClickListe
                     currentAddress = addressArray[addressArray.size - 3]
                 }
                 currentArea = mResultList?.get(adapterPosition)?.area.toString()
-                clickListener.click(currentArea, currentAddress)
+                clickListener.click(currentArea, currentAddress, sourceDestinationFlag)
             }
         }
     }
@@ -195,11 +195,11 @@ class PlacesAdapter(private val mContext: Context, val clickListener: ClickListe
 //    }
 
     interface ClickListener {
-        fun click(area: String?, address: String?)
-        fun boardingItemClicked(boardingPoint: BoardingPoint?)
-        fun cityItemClicked(city: String?)
-        fun sourceSearchClicked()
-        fun destinationSearchClicked()
+        fun click(area: String?, address: String?, flag: Int)
+        fun boardingItemClicked(boardingPoint: BoardingPoint?, flag: Int)
+        fun cityItemClicked(city: String?, flag: Int)
+        fun sourceSearchClicked(sourceText : String, destinationText : String)
+        fun destinationSearchClicked(sourceText : String, destinationText : String)
     }
 
     init {

@@ -5,9 +5,7 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.travelbus.R
 import com.example.travelbus.views.adapter.adapters.BoardingListAdapter
@@ -24,6 +22,15 @@ class LocationSearchFragment(val clickListener: PlacesAdapter.ClickListener) :
     private val recentList = ArrayList<String>()
 
     private lateinit var adapter: PlacesAdapter
+    private var sourceDestinationFlag : Int? = null
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.run {
+            sourceDestinationFlag = getInt("flag")
+        }
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -42,7 +49,7 @@ class LocationSearchFragment(val clickListener: PlacesAdapter.ClickListener) :
         Places.initialize(activity as Context, resources.getString(R.string.API_KEY))
         etSearch.addTextChangedListener(locationTextWatcher)
         val linearLayoutManager = LinearLayoutManager(activity as Context)
-        adapter = PlacesAdapter(activity as Context, clickListener)
+        adapter = PlacesAdapter(activity as Context, clickListener,sourceDestinationFlag!!)
         recyclerViewSearchBoarding.adapter = adapter
         recyclerViewSearchBoarding.layoutManager = linearLayoutManager
         adapter.notifyDataSetChanged()
@@ -79,7 +86,7 @@ class LocationSearchFragment(val clickListener: PlacesAdapter.ClickListener) :
         cityList.add("Hyderabad")
         cityList.add("Bangalore")
         cityList.add("Chennai")
-        val cityListAdapter = CityListAdapter(cityList,clickListener)
+        val cityListAdapter = CityListAdapter(cityList,clickListener, sourceDestinationFlag!!)
         val linearLayoutManager1 = LinearLayoutManager(activity)
         recyclerViewCities.adapter = cityListAdapter
         recyclerViewCities.layoutManager = linearLayoutManager1
@@ -90,7 +97,7 @@ class LocationSearchFragment(val clickListener: PlacesAdapter.ClickListener) :
         boardingList.add(BoardingPoint("Swargate", "Pune"))
         boardingList.add(BoardingPoint("Railway Station", "Pune"))
 
-        val boardingListAdapter = BoardingListAdapter(boardingList, clickListener)
+        val boardingListAdapter = BoardingListAdapter(boardingList, clickListener, sourceDestinationFlag!!)
         val linearLayoutManager3 = LinearLayoutManager(activity)
         recyclerViewBoarding.adapter = boardingListAdapter
         recyclerViewBoarding.layoutManager = linearLayoutManager3
@@ -100,7 +107,7 @@ class LocationSearchFragment(val clickListener: PlacesAdapter.ClickListener) :
     private fun recentList() {
         recentList.add("Pune")
         recentList.add("Delhi")
-        val cityListAdapter = CityListAdapter(recentList, clickListener)
+        val cityListAdapter = CityListAdapter(recentList, clickListener, sourceDestinationFlag!!)
         val linearLayoutManager2 = LinearLayoutManager(activity)
         recyclerViewRecent.adapter = cityListAdapter
         recyclerViewRecent.layoutManager = linearLayoutManager2
