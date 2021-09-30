@@ -6,6 +6,7 @@
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/default_pager_dot.xml" value="0.19583333333333333" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/ic_back_arrow_grey.xml" value="0.19583333333333333" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/ic_back_arrow_white.xml" value="0.19583333333333333" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/ic_boarding_points.xml" value="0.19583333333333333" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/ic_login_signup.xml" value="0.19583333333333333" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/red_btn_rounded_bg.xml" value="0.19583333333333333" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/selected_pager_dot.xml" value="0.19583333333333333" />
@@ -13,8 +14,10 @@
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/white_btn_red_stroke_rounded_bg.xml" value="0.19583333333333333" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/activity_splash_screen.xml" value="0.1796875" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/cities_item_layout.xml" value="0.1796875" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_country__language.xml" value="0.1796875" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_home.xml" value="0.1796875" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_location_search.xml" value="0.1796875" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_on_boarding1.xml" value="0.2997393570807993" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_on_boarding2.xml" value="0.165625" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_on_boarding3.xml" value="0.1796875" />

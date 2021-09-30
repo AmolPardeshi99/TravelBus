@@ -2,6 +2,7 @@
     <string name="app_name">TravelBus</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="API_KEY">AIzaSyDCPcEo4_Oc415ssCIun92qoIzhZSpzUI8</string>
     <string name="india">India</string>
     <string name="language">Language</string>
     <string name="country">Country</string>
