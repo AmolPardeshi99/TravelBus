@@ -10,7 +10,7 @@ import com.example.travelbus.views.adapter.fragments.BuseListFragment
 class BusBookingActivity : BaseActivity() {
 
     override fun setupView(savedInstanceState: Bundle?) {
-        supportFragmentManager.beginTransaction().add(R.id.busBookingContainer,BuseListFragment()).commit()
+        //supportFragmentManager.beginTransaction().add(R.id.b,BuseListFragment()).commit()
     }
 
     override fun provideLayoutId(): Int = R.layout.activity_bus_booking

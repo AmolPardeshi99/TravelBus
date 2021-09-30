@@ -1,5 +1,6 @@
 package com.example.travelbus.views.adapter.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.FragmentManager
 import com.example.travelbus.R
+import com.example.travelbus.views.adapter.activities.BusBookingActivity
 import com.example.travelbus.views.adapter.adapters.PlacesAdapter
 import kotlinx.android.synthetic.main.fragment_home.*
 
@@ -59,7 +61,7 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
         }
 
         btnSearch.setOnClickListener {
-
+            startActivity(Intent(context,BusBookingActivity::class.java))
         }
     }
 }
