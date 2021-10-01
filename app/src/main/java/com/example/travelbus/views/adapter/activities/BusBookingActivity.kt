@@ -1,11 +1,8 @@
 package com.example.travelbus.views.adapter.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.FragmentManager
 import com.example.travelbus.R
-import com.example.travelbus.base.BaseActivity
-import com.example.travelbus.views.adapter.fragments.BuseListFragment
+import com.example.travelbus.views.adapter.base.BaseActivity
 
 class BusBookingActivity : BaseActivity() {
 

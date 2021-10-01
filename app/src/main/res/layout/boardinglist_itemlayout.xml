@@ -7,13 +7,62 @@
 
 
     <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/btnRadio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="15dp"
         android:backgroundTint="@color/materialRed"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/tvBorDesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Pune Station Road- Opp:- S.T Stand"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@id/tvBorDesSubTitle"
+        app:layout_constraintStart_toEndOf="@id/btnRadio"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBorDesSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat"
+        android:maxLines="1"
+        app:layout_constraintStart_toEndOf="@id/btnRadio"
+        app:layout_constraintTop_toBottomOf="@id/tvBorDesTitle"
+        android:text="Pune Station Road Opp:- ST Stand" />
+
+    <TextView
+        android:id="@+id/tvContactNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8888848446"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:maxLines="1"
+        android:fontFamily="@font/montserrat"
+        app:layout_constraintStart_toEndOf="@id/btnRadio"
+        app:layout_constraintTop_toBottomOf="@id/tvBorDesSubTitle"/>
+
+    <TextView
+        android:id="@+id/tvBorDepTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15:00"
+        android:fontFamily="@font/montserrat"
+        app:layout_constraintTop_toTopOf="@id/tvBorDesTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

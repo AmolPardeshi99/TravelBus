@@ -11,11 +11,14 @@ import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import com.example.travelbus.R
+import com.example.travelbus.models.local.Users
 import com.example.travelbus.views.adapter.activities.HomeActivity
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.*
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.auth.User
+import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_otp.*
 import kotlinx.coroutines.*
@@ -155,9 +158,9 @@ class OtpFragment : Fragment(R.layout.fragment_otp) {
     }
 
     private fun addUserDetailsToDatabase(uid: String) {
-//        val db = Firebase.firestore
-//        val user = User(tvEnterOTP.text.toString(), uid)
-//        db.collection("users").document(uid).set(user)
+        val db = Firebase.firestore
+        val user = Users(phoneNumber.toString(), uid)
+        db.collection("users").document(uid).set(user)
     }
 
     private fun sendVerificationCode() {

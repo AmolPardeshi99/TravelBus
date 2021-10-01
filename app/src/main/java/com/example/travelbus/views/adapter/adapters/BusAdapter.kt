@@ -39,7 +39,6 @@ class BusAdapter(
                 tvBusDestination.text = data.to
                 tvDepArrTime.text = data.timing
                 tvTotalTime.text = data.travellingtime
-                tvNoOfSeats.text = data.seats + " seats"
                 tvPrise.text = "₹ " + data.price
                 busBookingCard.setOnClickListener {
                     onBusItemClickListener.onBusClicked(data)

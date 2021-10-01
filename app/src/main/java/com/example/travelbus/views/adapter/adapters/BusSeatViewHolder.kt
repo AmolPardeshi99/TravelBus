@@ -1,18 +1,18 @@
 package com.example.travelbus.views.adapter.adapters
 
+import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
-import androidx.core.graphics.drawable.toDrawable
 import com.example.travelbus.R
+import com.example.travelbus.models.local.Seats
 import com.example.travelbus.views.adapter.base.BaseItemViewHolder
-import com.example.travelbus.views.adapter.fragments.BusSeat
 
 class BusSeatViewHolder(val view: View) :
-    BaseItemViewHolder<BusSeat>(view) {
+    BaseItemViewHolder<Seats>(view) {
 
 
-    override fun setData(data: BusSeat) {
+    override fun setData(data: Seats) {
         val seatIcon = view.findViewById<ImageView>(R.id.imageSeat)
         val seat = view.findViewById<LinearLayout>(R.id.seatItem)
         setSeatIcon(data, seatIcon, seat)
@@ -28,28 +28,34 @@ class BusSeatViewHolder(val view: View) :
                 setSeatIcon(data, seatIcon, seat)
             }
         }
-
     }
 
-    private fun setSeatIcon(data: BusSeat, seatIcon: ImageView, seat: LinearLayout) {
-        if (data.Type == "Female") {
-            if (data.Availability == "Yes") {
-                seatIcon.setBackgroundResource(R.drawable.ic_seat_female_available)
+    private fun setSeatIcon(data: Seats, seatIcon: ImageView, seat: LinearLayout) {
+        Log.d("amol", "setSeatIcon: ${data.real_seat+""+data.available+""+data.seat_no+""+data.type}")
+        if (data.real_seat.equals("yes")) {
+            if (data.type == "female") {
+                if (data.available == "yes") {
+                    seatIcon.setBackgroundResource(R.drawable.ic_seat_female_available)
+                } else {
+                    seat.isClickable = false
+                    seatIcon.isClickable = false
+                    seatIcon.setBackgroundResource(R.drawable.ic_seat_female_booked)
+                }
             } else {
-                seat.isClickable = false
-                seatIcon.isClickable = false
-                seatIcon.setBackgroundResource(R.drawable.ic_seat_female_booked)
+                if (data.available == "yes") {
+                    seatIcon.setBackgroundResource(R.drawable.ic_seat_available)
+                } else {
+                    seat.isClickable = false
+                    seatIcon.isClickable = false
+                    seatIcon.setBackgroundResource(R.drawable.ic_seat_booked)
+                }
             }
-        } else {
-            if (data.Availability == "Yes") {
-                seatIcon.setBackgroundResource(R.drawable.ic_seat_available)
-            } else {
-                seat.isClickable = false
-                seatIcon.isClickable = false
-                seatIcon.setBackgroundResource(R.drawable.ic_seat_booked)
-            }
+        }else{
+            seat.isClickable = false
+            seatIcon.isClickable = false
         }
     }
+
 
 }
 

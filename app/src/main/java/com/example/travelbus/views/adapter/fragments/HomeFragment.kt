@@ -11,6 +11,9 @@ import androidx.fragment.app.FragmentManager
 import com.example.travelbus.R
 import com.example.travelbus.views.adapter.activities.BusBookingActivity
 import com.example.travelbus.views.adapter.adapters.PlacesAdapter
+import com.google.firebase.firestore.SetOptions
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fragment(R.layout.fragment_home) {
@@ -64,4 +67,5 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
             startActivity(Intent(context,BusBookingActivity::class.java))
         }
     }
+
 }

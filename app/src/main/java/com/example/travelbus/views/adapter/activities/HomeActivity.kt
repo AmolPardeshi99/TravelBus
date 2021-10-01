@@ -18,10 +18,7 @@ class HomeActivity : AppCompatActivity(), PlacesAdapter.ClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-
         setBottomNavigation()
-
-
     }
 
 
