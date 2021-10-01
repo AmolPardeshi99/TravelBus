@@ -1,9 +1,11 @@
 package com.example.travelbus.views.adapter.fragments
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.View
+import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
@@ -21,6 +23,7 @@ lateinit var navController: NavController
     private val busRef = db.collection("Buses")
     private var listOfSeats= ArrayList<Seats>()
     lateinit var busSeatAdapter:BusSeatAdapter
+    var bus_id = ""
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -30,7 +33,20 @@ lateinit var navController: NavController
         btnSignupFrag.setOnClickListener {
             navController.navigate(R.id.action_seatSelectionFragment_to_passengerDetailsFragment)
         }
+        arguments?.run {
+            bus_id = getString("bus_id").toString()
+        }
+
         setRecyclerView()
+        changePriseIcon()
+    }
+
+    private fun changePriseIcon() {
+
+        btn399.setOnClickListener{
+            btnAllPrices.setBackgroundColor(ContextCompat.getColor(activity?.applicationContext!!,R.color.white))
+            btn299.setBackgroundColor(ContextCompat.getColor(activity?.applicationContext!!,R.color.materialRed))
+        }
     }
 
     private fun setRecyclerView() {
@@ -47,7 +63,6 @@ lateinit var navController: NavController
                 var seats = doc.data?.get("seats") as ArrayList<HashMap<String,String>>
 
 
-
                 for (i in 0 until seats.size) {
                     var seatmodel = Seats()
                     seatmodel.available = seats[i].getValue("available")
@@ -55,7 +70,7 @@ lateinit var navController: NavController
                     seatmodel.type = seats[i].getValue("type")
                     seatmodel.seat_no = seats[i].getValue("seat_no")
                     listOfSeats.add(seatmodel)
-                    Log.d("TAG", "getBusesData: ${seatmodel.toString()}")
+                    Log.d("TAG", "getBusesData: $seatmodel")
                 }
                 busSeatAdapter.notifyDataSetChanged()
             }

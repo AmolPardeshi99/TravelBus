@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.fragment_buse_list.*
 
 class BuseListFragment : Fragment(R.layout.fragment_buse_list),OnBusItemClickListener {
     private val db = Firebase.firestore
-    private val busRef = db.collection("Buses");
+    private val busRef = db.collection("Buses")
     private var listOfBuses = ArrayList<Buses>()
     val TAG = "Travel APP"
     private lateinit var busAdapter:BusAdapter
@@ -55,6 +55,8 @@ class BuseListFragment : Fragment(R.layout.fragment_buse_list),OnBusItemClickLis
     }
 
     override fun onBusClicked(buses: Buses) {
+        var bundle = Bundle()
+        bundle.putString("bus_id",buses.id)
         navController.navigate(R.id.action_buseListFragment_to_seatSelectionFragment)
     }
 

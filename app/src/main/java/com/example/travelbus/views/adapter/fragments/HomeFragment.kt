@@ -23,6 +23,9 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
     private var sourceDestinationFlag : Int? = null
     private var sourceText = ""
     private var destinationText = ""
+    private val db = Firebase.firestore
+    private val bookingRef = db.collection("bookings")
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,8 +67,28 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
         }
 
         btnSearch.setOnClickListener {
-            startActivity(Intent(context,BusBookingActivity::class.java))
+            var bookingModel = BookingModel()
+            bookingModel.date = etDate.text.toString()
+            bookingModel.to = etEnterDestination.text.toString()
+            bookingModel.from = etEnterSource.text.toString()
+
+            val id = bookingRef.document().id
+            bookingModel.booking_Id = id
+            bookingModel.bus_Id = ""
+            bookingRef.document(id).set(bookingModel)
+            val intent = Intent(context,BusBookingActivity::class.java)
+            startActivity(intent)
         }
+    }
+
+    class BookingModel(
+        var date:String="",
+        var from:String="",
+        var to:String="",
+        var booking_Id:String="",
+        var bus_Id:String=""
+    ){
+
     }
 
 }
