@@ -57,7 +57,7 @@ class BuseListFragment : Fragment(R.layout.fragment_buse_list),OnBusItemClickLis
     override fun onBusClicked(buses: Buses) {
         var bundle = Bundle()
         bundle.putString("bus_id",buses.id)
-        navController.navigate(R.id.action_buseListFragment_to_seatSelectionFragment)
+        navController.navigate(R.id.action_buseListFragment_to_seatSelectionFragment,bundle)
     }
 
 
