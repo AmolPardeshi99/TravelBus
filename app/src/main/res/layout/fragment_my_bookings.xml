@@ -28,14 +28,18 @@
         android:id="@+id/tabsMyBooking"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingVertical="5dp"
+        android:paddingTop="5dp"
         android:background="@color/materialRed"
+        app:tabIndicatorColor="#F8DFE0"
+        app:tabIndicatorGravity="stretch"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="@color/materialRed"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Small"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMyBookings"
         app:tabGravity="fill"
-        app:tabMode="fixed"
-        app:tabTextColor="@color/white" />
+        app:tabMode="fixed" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPagerBookingType"

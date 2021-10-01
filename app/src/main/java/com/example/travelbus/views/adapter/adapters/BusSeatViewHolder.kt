@@ -8,7 +8,7 @@ import com.example.travelbus.R
 import com.example.travelbus.models.local.Seats
 import com.example.travelbus.views.adapter.base.BaseItemViewHolder
 
-class BusSeatViewHolder(val view: View) :
+class BusSeatViewHolder(val view: View, val seatClickedListener: SeatClickedListener) :
     BaseItemViewHolder<Seats>(view) {
 
 
@@ -23,9 +23,11 @@ class BusSeatViewHolder(val view: View) :
             if (seat.isSelected) {
                 seat.isSelected = false
                 seatIcon.setBackgroundResource(R.drawable.ic_seat_selected)
+                seatClickedListener.onSeatSelected()
             } else {
                 seat.isSelected = true
                 setSeatIcon(data, seatIcon, seat)
+                seatClickedListener.onSeatDeselected()
             }
         }
     }
