@@ -10,6 +10,8 @@
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/ic_boarding_points.xml" value="0.19583333333333333" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/ic_frame_bottom_drawer.xml" value="0.3333333333333333" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/ic_login_signup.xml" value="0.19583333333333333" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/ic_more_vert.xml" value="0.1649122807017544" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/ic_route_arrow.xml" value="0.3333333333333333" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/ic_seat_available.xml" value="0.1649122807017544" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/red_btn_rounded_bg.xml" value="0.19583333333333333" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/selected_pager_dot.xml" value="0.19583333333333333" />
@@ -20,6 +22,7 @@
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/activity_on_boarding.xml" value="0.1796875" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/activity_splash_screen.xml" value="0.1796875" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/boarding_point_item_layout.xml" value="0.13333333333333333" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/booking_item_layout.xml" value="0.22" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/bus_seat_item_layout.xml" value="0.1513157894736842" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/cities_item_layout.xml" value="0.1796875" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_bus_hire_booking_cancelled.xml" value="0.1513157894736842" />

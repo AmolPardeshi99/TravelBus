@@ -31,4 +31,5 @@ class RedBusMyBookingFragment : Fragment(R.layout.fragment_red_bus_my_booking) {
             }
         }.attach()
     }
+
 }

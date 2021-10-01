@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="4dp"
+    app:cardMaxElevation="12dp"
+    app:cardElevation="4dp"
+    android:layout_height="180dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FBFBFB"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvBookingDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/montserrat"
+            android:lines="1"
+            android:text="22 Sept 2021, 03:00 PM, Sunday"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnBookingOptions"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_more_vert"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:text="149.3kms"
+            android:textSize="12sp"
+            android:layout_above="@+id/imageRouteArrow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="normal"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/imageRouteArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBookingDate"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_route_arrow" />
+
+        <TextView
+            android:id="@+id/tvStops"
+            android:text="no stop added"
+            android:textSize="12sp"
+            android:layout_below="@+id/imageRouteArrow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-15dp"
+            android:textColor="#9FA1A3"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="normal"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvSource"
+            android:text="Pune"
+            android:textSize="12sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-5dp"
+            android:layout_below="@+id/imageRouteArrow"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="normal"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvDestination"
+            android:text="Mumbai"
+            android:textSize="12sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="-5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/imageRouteArrow"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="normal"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvPaymentDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/montserrat"
+            android:lines="1"
+            android:background="#BDF3E5"
+            android:padding="15dp"
+            android:text="299/- Paid Via Phonepe"
+            android:textColor="#6E7275"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
