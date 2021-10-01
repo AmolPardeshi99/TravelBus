@@ -11,26 +11,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TravelBus">
-        <activity
-            android:name=".views.adapter.activities.BoardingDroppingActivity"
-            android:exported="true" />
+
         <activity
             android:name=".views.adapter.activities.BusBookingActivity"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".views.adapter.activities.OnBoardingActivity"
             android:exported="true" />
         <activity
             android:name=".views.adapter.activities.SplashScreenActivity"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".views.adapter.activities.HomeActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
         </activity>
         <activity
             android:name=".views.adapter.activities.MainActivity"

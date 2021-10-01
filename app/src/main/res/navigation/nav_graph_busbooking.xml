@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_busbooking"
+    app:startDestination="@id/buseListFragment">
+
+    <fragment
+        android:id="@+id/buseListFragment"
+        android:name="com.example.travelbus.views.adapter.fragments.BuseListFragment"
+        android:label="fragment_buse_list"
+        tools:layout="@layout/fragment_buse_list" >
+        <action
+            android:id="@+id/action_buseListFragment_to_seatSelectionFragment"
+            app:destination="@id/seatSelectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seatSelectionFragment"
+        android:name="com.example.travelbus.views.adapter.fragments.SeatSelectionFragment"
+        android:label="fragment_seat_selection"
+        tools:layout="@layout/fragment_seat_selection" >
+        <action
+            android:id="@+id/action_seatSelectionFragment_to_passengerDetailsFragment"
+            app:destination="@id/passengerDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passengerDetailsFragment"
+        android:name="com.example.travelbus.views.adapter.fragments.PassengerDetailsFragment"
+        android:label="fragment_passenger_details"
+        tools:layout="@layout/fragment_passenger_details" >
+        <action
+            android:id="@+id/action_passengerDetailsFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.travelbus.views.adapter.fragments.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" />
+</navigation>

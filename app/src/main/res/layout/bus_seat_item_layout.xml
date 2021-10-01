@@ -9,7 +9,7 @@
         android:id="@+id/imageSeat"
         android:layout_marginVertical="5dp"
         android:layout_marginHorizontal="5dp"
-        android:background="@drawable/ic_seat_booked"
+        android:background="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

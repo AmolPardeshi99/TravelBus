@@ -1,4 +1,4 @@
-package com.example.travelbus.base
+package com.example.travelbus.views.adapter.base
 
 import android.os.Bundle
 import android.os.PersistableBundle
