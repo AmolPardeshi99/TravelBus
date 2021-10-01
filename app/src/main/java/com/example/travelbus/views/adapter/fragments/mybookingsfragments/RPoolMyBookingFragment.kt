@@ -32,4 +32,5 @@ class RPoolMyBookingFragment : Fragment(R.layout.fragment_r_pool_my_booking) {
             }
         }.attach()
     }
+
 }
