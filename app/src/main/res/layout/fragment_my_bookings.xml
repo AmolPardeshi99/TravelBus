@@ -1,14 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".views.adapter.fragments.MyBookingsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
+        android:id="@+id/tvMyBookings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D74E55"
+        android:fontFamily="@font/montserrat"
+        android:text="My Bookings"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:paddingVertical="30dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabsMyBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:background="@color/materialRed"
+        app:tabIndicatorColor="#F8DFE0"
+        app:tabIndicatorGravity="stretch"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="@color/materialRed"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMyBookings"
+        app:tabGravity="fill"
+        app:tabMode="fixed" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerBookingType"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        app:layout_constraintTop_toBottomOf="@+id/tabsMyBooking" />
 
-</FrameLayout>
+</LinearLayout>
