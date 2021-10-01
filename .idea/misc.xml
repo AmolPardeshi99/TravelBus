@@ -3,28 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/bottom_sheet_rounded.xml" value="0.24473684210526317" />
-        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/ic_google_pay.xml" value="0.24473684210526317" />
-        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/ic_mail.xml" value="0.24473684210526317" />
-        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/ic_next_arrow.xml" value="0.24473684210526317" />
-        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/ic_payment_logo.xml" value="0.24473684210526317" />
-        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/ic_paytm_logo.xml" value="0.24473684210526317" />
-        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/ic_phone.xml" value="0.24473684210526317" />
-        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/drawable/ic_whatsapp_logo.xml" value="0.24473684210526317" />
-        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/bottom_upi_layout.xml" value="0.264" />
-        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_home.xml" value="0.4" />
-        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_passenger_details.xml" value="0.4" />
-        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_payment.xml" value="0.264" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/ic_back_button.xml" value="0.2703125" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/ic_rectangle.xml" value="0.2703125" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/otp_box.xml" value="0.2703125" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/rectangle_border.xml" value="0.26615384615384613" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/selected_pager_dot.xml" value="0.2703125" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/selector_box.xml" value="0.2703125" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/selector_match_team.xml" value="0.2703125" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_boarding_dropping.xml" value="0.4" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_bus_booking.xml" value="0.21403508771929824" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/bus_seat_item_layout.xml" value="0.1649122807017544" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/default_pager_dot.xml" value="0.19583333333333333" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/drawable/ic_back_arrow_grey.xml" value="0.19583333333333333" />
@@ -44,6 +22,9 @@
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/boarding_point_item_layout.xml" value="0.13333333333333333" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/bus_seat_item_layout.xml" value="0.1513157894736842" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/cities_item_layout.xml" value="0.1796875" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_bus_hire_booking_cancelled.xml" value="0.1513157894736842" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_bus_hire_booking_completed.xml" value="0.1513157894736842" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_bus_hire_my_booking.xml" value="0.1394736842105263" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_buse_list.xml" value="0.1513157894736842" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_country__language.xml" value="0.1796875" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_help.xml" value="0.1513157894736842" />
@@ -56,28 +37,17 @@
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_on_boarding2.xml" value="0.165625" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_on_boarding3.xml" value="0.1796875" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_on_boarding_main.xml" value="0.16666666666666666" />
-        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_seat_selection.xml" value="0.5" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_r_pool_booking_cancelled.xml" value="0.1513157894736842" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_r_pool_booking_completed.xml" value="0.1513157894736842" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_r_pool_my_booking.xml" value="0.1394736842105263" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_red_bus_booking_cancelled.xml" value="0.1" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_red_bus_booking_completed.xml" value="0.1" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_red_bus_my_booking.xml" value="0.3333333333333333" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_seat_selection.xml" value="0.16666666666666666" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/fragment_signup_or_login.xml" value="0.17692307692307693" />
+        <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/itemlayout_bus.xml" value="0.1" />
         <entry key="..\:/MASAI/AndroidStudioProjects/Unit4_BuildWeek/TravelBus/app/src/main/res/layout/onboarding_custom_layout.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_on_boarding.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/boardinglist_itemlayout.xml" value="0.2" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_boarding_dropping.xml" value="0.21403508771929824" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_buse_list.xml" value="0.4" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_country__language.xml" value="0.264" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_help.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_home.xml" value="0.2" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_login.xml" value="0.264" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_my_account.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_my_bookings.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_on_boarding_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_otp.xml" value="0.24010416666666667" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_sign_up.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_signup_or_login.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/fragment_splash_screen.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/itemlayout_bus.xml" value="0.4" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/onboarding_custom_layout.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

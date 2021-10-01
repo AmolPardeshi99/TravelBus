@@ -18,6 +18,8 @@ class SeatSelectionFragment : Fragment(R.layout.fragment_seat_selection) {
         buildSeatLayout()
     }
 
+
+    //dummy data to populate the bus layout
     private fun buildSeatLayout() {
         val busSeats = ArrayList<BusSeat>()
         for (i in 1..10){

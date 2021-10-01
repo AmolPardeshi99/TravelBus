@@ -1,4 +1,4 @@
-package com.example.travelbus.views.adapter.fragments
+package com.example.travelbus.views.adapter.fragments.mybookingsfragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,12 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.travelbus.R
 import com.example.travelbus.views.adapter.adapters.MyBookingPagerAdapter
-import com.google.android.material.tabs.TabLayout
+import com.example.travelbus.views.adapter.adapters.RedBusBookingPagerAdapter
 import com.google.android.material.tabs.TabLayoutMediator
-import com.google.android.material.tabs.TabLayoutMediator.TabConfigurationStrategy
 import kotlinx.android.synthetic.main.fragment_my_bookings.*
+import kotlinx.android.synthetic.main.fragment_red_bus_my_booking.*
 
-class MyBookingsFragment : Fragment(R.layout.fragment_my_bookings) {
+class RedBusMyBookingFragment : Fragment(R.layout.fragment_red_bus_my_booking) {
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -20,14 +21,13 @@ class MyBookingsFragment : Fragment(R.layout.fragment_my_bookings) {
     }
 
     private fun setAdapter() {
-        val pagerAdapter = MyBookingPagerAdapter(requireActivity().supportFragmentManager, lifecycle)
-        viewPagerBookingType.adapter = pagerAdapter
-        TabLayoutMediator(tabsMyBooking, viewPagerBookingType) {
-                tab, position ->
+        val pagerAdapter =
+            RedBusBookingPagerAdapter(requireActivity().supportFragmentManager, lifecycle)
+        viewPagerRedBus.adapter = pagerAdapter
+        TabLayoutMediator(tabsRedBus, viewPagerRedBus) { tab, position ->
             when (position) {
-                0 -> tab.text = "redBus"
-                1 -> tab.text = "rPool"
-                2 -> tab.text = "Bus Hire"
+                0 -> tab.text = "COMPLETED"
+                1 -> tab.text = "CANCELLED"
             }
         }.attach()
     }
