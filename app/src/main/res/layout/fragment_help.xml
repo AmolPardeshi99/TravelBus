@@ -38,6 +38,7 @@
     </com.google.android.material.appbar.MaterialToolbar>
 
     <ScrollView
+        android:scrollbars="none"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout

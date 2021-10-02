@@ -237,7 +237,9 @@
                     android:backgroundTint="@color/white"
                     android:fontFamily="@font/montserrat"
                     android:hint="Enter offer code"
+                    android:textColor="@color/black"
                     android:textColorHint="@color/light_grey_2"
+                    android:textCursorDrawable="@null"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -377,7 +379,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_wallet"
+                    android:src="@drawable/ic_wallet_black"
                     app:tint="#6E7275" />
                 <TextView
                     android:layout_width="wrap_content"
