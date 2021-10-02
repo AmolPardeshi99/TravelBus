@@ -14,6 +14,9 @@
     <color name="grey">#EEEEEE</color>
     <color name="dark_grey">#6E7275</color>
     <color name="light_grey">#9FA1A3</color>
+    <color name="simple_grey">#FBFBFB</color>
+
+
     <color name="grey_with_dark">#E5E5E5</color>
     <color name="grey1">#F8F4F3</color>
     <color name="light_grey_2">#BFC0C2</color>

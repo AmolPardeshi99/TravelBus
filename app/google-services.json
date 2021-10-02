@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1088458200903-ivtaldcrvts9f93mqf1s3q2ruk9l7pmh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.travelbus",
+            "certificate_hash": "7179bba4e9a6d8a41a1fe5b39ba212fe40ffc584"
+          }
+        },
+        {
           "client_id": "1088458200903-b95d1gjvsnggm83srnfu1f01cgqkft9m.apps.googleusercontent.com",
           "client_type": 3
         }

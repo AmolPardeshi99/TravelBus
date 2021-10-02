@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".views.adapter.fragments.mybookingsfragments.RPoolMyBookingFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="All your bookings have been downloaded from redBus." />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#6E7275"
+        android:textSize="15sp"
+        android:text="Pull to refresh" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabsRPool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:tabIndicatorColor="@color/materialRed"
+        app:tabSelectedTextColor="@color/materialRed"
+        app:tabIndicatorHeight="3dp"
+        android:paddingVertical="5dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabTextColor="#BFC0C2" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerRPool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabsMyBooking" />
+
+
+</LinearLayout>

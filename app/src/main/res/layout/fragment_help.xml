@@ -66,7 +66,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:padding="20dp"
-                    android:background="@color/light_grey">
+                    android:background="@color/simple_grey">
                     <ImageView
                         android:id="@+id/ivBus"
                         android:layout_width="wrap_content"
@@ -106,7 +106,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:padding="20dp"
-                    android:background="@color/light_grey">
+                    android:background="@color/simple_grey">
                     <ImageView
                         android:id="@+id/ivAdvisory"
                         android:layout_width="wrap_content"
@@ -146,7 +146,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:padding="20dp"
-                    android:background="@color/light_grey">
+                    android:background="@color/simple_grey">
 
                     <ImageView
                         android:id="@+id/ivSafety"
@@ -159,10 +159,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/ivSafety"
                         android:text="New bus booking help"
-                        android:layout_marginLeft="10dp"
-                        android:layout_centerVertical="true"
                         android:textColor="@color/black"
                         android:textSize="18sp" />
 
@@ -187,7 +187,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:padding="20dp"
-                    android:background="@color/light_grey">
+                    android:background="@color/simple_grey">
                     <ImageView
                         android:id="@+id/ivTechnical"
                         android:layout_width="wrap_content"
@@ -227,7 +227,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:padding="20dp"
-                    android:background="@color/light_grey">
+                    android:background="@color/simple_grey">
 
                     <ImageView
                         android:id="@+id/ivReferral"
@@ -268,7 +268,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:padding="20dp"
-                    android:background="@color/light_grey">
+                    android:background="@color/simple_grey">
 
                     <ImageView
                         android:id="@+id/ivOffers"
@@ -309,7 +309,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:padding="20dp"
-                    android:background="@color/light_grey">
+                    android:background="@color/simple_grey">
 
                     <ImageView
                         android:id="@+id/ivCar"

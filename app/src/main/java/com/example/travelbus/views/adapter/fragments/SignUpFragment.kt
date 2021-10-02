@@ -18,7 +18,9 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
 
         navController = Navigation.findNavController(view)
         btnSignUp.setOnClickListener {
-            navController.navigate(R.id.action_signUpFragment_to_otpFragment)
+            var bundle = Bundle()
+            bundle.putString("phonenumber",etMobileNo.text.toString())
+            navController.navigate(R.id.action_signUpFragment_to_otpFragment,bundle)
         }
     }
 
