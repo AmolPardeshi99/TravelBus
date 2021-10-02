@@ -37,6 +37,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -309,7 +310,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginRight="80dp"
-                    android:drawableStart="@drawable/ic_wallet"
+                    android:drawableStart="@drawable/ic_wallet_black"
                     android:drawablePadding="16dp"
                     android:text="Pay the balance by Credit Card/ Debit Card/ UPI/Net Banking/ Cash to Driver"
                     android:textAlignment="textStart"

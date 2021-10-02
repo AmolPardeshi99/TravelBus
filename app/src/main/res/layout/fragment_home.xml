@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="none"
     tools:context=".views.adapter.fragments.HomeFragment">
 
     <LinearLayout
@@ -64,10 +65,14 @@
                         android:id="@+id/etEnterSource"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textCursorDrawable="@null"
+                        android:backgroundTint="@color/black"
+                        android:textColor="@color/black"
                         android:drawableLeft="@drawable/ic_enter_source"
                         android:focusable="false"
                         android:drawablePadding="18dp"
                         android:hint="ENTER SOURCE"
+                        android:fontFamily="@font/montserrat"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -86,6 +91,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:focusable="false"
+                        android:fontFamily="@font/montserrat"
+                        android:textCursorDrawable="@null"
+                        android:backgroundTint="@color/black"
+                        android:textColor="@color/black"
                         android:drawableLeft="@drawable/ic_enter_destination"
                         android:drawablePadding="18dp"
                         android:hint="ENTER DESTINATION"
@@ -97,9 +106,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableLeft="@drawable/ic_calender"
+                        android:focusable="false"
                         android:drawablePadding="18dp"
-                        android:hint="Wed, 22 Sep"
+                        android:textCursorDrawable="@null"
+                        android:backgroundTint="@color/black"
                         android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Wed, 22 Sep"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/etEnterDestination" />
 
@@ -293,6 +306,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
+                android:scrollbars="none"
                 android:background="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvOfferDescLabel">
@@ -320,6 +334,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
+                android:scrollbars="none"
                 android:background="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/scrollView1">
