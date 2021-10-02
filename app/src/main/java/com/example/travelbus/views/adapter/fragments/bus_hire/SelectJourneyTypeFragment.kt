@@ -9,15 +9,18 @@ import com.example.travelbus.R
 import kotlinx.android.synthetic.main.fragment_select_journey_type.*
 
 class SelectJourneyTypeFragment : Fragment(R.layout.fragment_select_journey_type) {
-    lateinit var navController: NavController
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        navController = Navigation.findNavController(view)
 
-        btnGoToNext.setOnClickListener {
-            navController.navigate(R.id.action_selectJourneyTypeFragment_to_busHireDetailFragment)
+        imageOutstaion.setOnClickListener {
+            activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.busHireContainer, BusHireDetailFragment())?.commit()
         }
-
-
+        imageLocal.setOnClickListener {
+            activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.busHireContainer, BusHireDetailFragment())?.commit()
+        }
+        imageAirport.setOnClickListener {
+            activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.busHireContainer, BusHireDetailFragment())?.commit()
+        }
     }
 }

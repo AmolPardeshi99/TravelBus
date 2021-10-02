@@ -203,7 +203,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="10dp"
                 android:layout_marginTop="12dp"
-                android:src="@drawable/ic_select_package"
+                android:src="@drawable/select_package"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/radioButton4" />
@@ -238,7 +238,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-
             <TextView
                 android:id="@+id/btn"
                 android:layout_width="300dp"
@@ -246,12 +245,13 @@
                 android:layout_marginTop="48dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/rectangle_border"
+                android:drawableStart="@drawable/ic_calendar_img"
+                android:drawablePadding="10dp"
                 android:fontFamily="@font/montserrat"
                 android:hint="30, Sep"
                 android:inputType="textPersonName"
                 android:padding="10dp"
                 android:textSize="12sp"
-                android:drawableStart="@drawable/ic_calendar_img"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.494"

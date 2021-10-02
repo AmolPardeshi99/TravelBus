@@ -126,6 +126,11 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
             etDate.setText("$dayName, ${currentDay+1} $month_Name")
         }
 
+        cvBusHire.setOnClickListener {
+            startActivity(Intent(context,BusHireActivity::class.java))
+
+        }
+
         etDate.setOnClickListener {
 
         }
@@ -137,9 +142,6 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
             if (id != null) {
                 userRef.document(id).get().addOnSuccessListener { doc->
                     if (doc.data?.get("bookings") != null) {
-//                        val bookings:ArrayList<String> = doc.data?.get("bookings") as ArrayList<String>
-//                        val list: ArrayList<String> = bookings
-//                        list.add(booking_id)
                         userRef.document(id).update("bookings", booking_id)
                         //Log.d("abhishek", bookings.toString())
 
@@ -154,9 +156,7 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
 
 
         // Bus Hire
-        cvBusHire.setOnClickListener {
-            startActivity(Intent(context,BusHireActivity::class.java))
-        }
+
     }
 
     class BookingModel(
