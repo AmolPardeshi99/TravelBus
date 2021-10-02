@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.adapter.fragments.bus_hire.BusHireWelcomeFragment">
+
+    <TextView
+        android:id="@+id/tvBusHire"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/materialRed"
+        android:textSize="21sp"
+        android:fontFamily="@font/montserrat"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="60dp"
+        android:paddingTop="10dp"
+        android:gravity="center_vertical"
+        android:text="Bus Hire"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_back_arrow_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBusHire">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="30dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="96dp"
+                android:text="Rent vehicles with a driver from the best operatos"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:scrollbars="none"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/offer_cards_1" />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/offer_cards_2" />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:src="@drawable/offer_cards_3" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/btnHireVehicle1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="HIRE A VEHICLE"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="96dp"
+                android:text="Book in 3 easy steps"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnHireVehicle1" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/easy_steps_1"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/easy_steps_2"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/easy_steps_3"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="96dp"
+                android:text="Offers"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#49CA9F"
+                android:drawableLeft="@drawable/offer_tag"
+                android:fontFamily="@font/montserrat"
+                android:paddingEnd="40dp"
+                android:text="Get upto Rs.1000 off"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#E5EBF9"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="96dp"
+                    android:text="Easier with Bus Hire"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/white"
+                    android:scrollbars="none"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#E5EBF9"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:backgroundTint="#0E2AB4"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:paddingHorizontal="20dp"
+                            android:text="Easy Payment"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            app:cornerRadius="20dp"
+                            app:strokeColor="#0E2AB4"
+                            app:strokeWidth="1dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:backgroundTint="#FDF8F8"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:paddingHorizontal="20dp"
+                            android:text="Easy Booking"
+                            android:textAllCaps="false"
+                            android:textColor="#6E7275"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            app:cornerRadius="20dp"
+                            app:strokeColor="#6E7275"
+                            app:strokeWidth="1dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:backgroundTint="#FDF8F8"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:paddingHorizontal="20dp"
+                            android:text="Fare Transparent"
+                            android:textAllCaps="false"
+                            android:textColor="#6E7275"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            app:cornerRadius="20dp"
+                            app:strokeColor="#6E7275"
+                            app:strokeWidth="1dp" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="96dp"
+                    android:drawableStart="@drawable/ic_percentage"
+                    android:drawablePadding="16dp"
+                    android:text="Pay just 25% advance to book the vehicle."
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="80dp"
+                    android:drawableStart="@drawable/ic_wallet"
+                    android:drawablePadding="16dp"
+                    android:text="Pay the balance by Credit Card/ Debit Card/ UPI/Net Banking/ Cash to Driver"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="96dp"
+                android:text="Vehicle Types"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:scrollbars="none"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="185dp"
+                        android:layout_height="230dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/vehicle_types_1" />
+
+                    <ImageView
+                        android:layout_width="185dp"
+                        android:layout_height="230dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/vehicle_types_2" />
+
+                    <ImageView
+                        android:layout_width="185dp"
+                        android:layout_height="230dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:src="@drawable/vehicle_types_3" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/btnHireVehicle2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="HIRE A VEHICLE"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
