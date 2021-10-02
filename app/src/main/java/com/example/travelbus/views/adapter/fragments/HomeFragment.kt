@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.fragment.app.FragmentManager
 import com.example.travelbus.R
 import com.example.travelbus.views.adapter.activities.BusBookingActivity
+import com.example.travelbus.views.adapter.activities.BusHireActivity
 import com.example.travelbus.views.adapter.adapters.PlacesAdapter
 import com.google.firebase.firestore.SetOptions
 import com.google.firebase.firestore.ktx.firestore
@@ -78,6 +79,12 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
             bookingRef.document(id).set(bookingModel)
             val intent = Intent(context,BusBookingActivity::class.java)
             startActivity(intent)
+        }
+
+
+        // Bus Hire
+        cvBusHire.setOnClickListener {
+            startActivity(Intent(context,BusHireActivity::class.java))
         }
     }
 

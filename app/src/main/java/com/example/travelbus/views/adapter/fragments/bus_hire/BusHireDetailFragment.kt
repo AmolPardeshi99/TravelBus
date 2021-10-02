@@ -6,18 +6,19 @@ import android.view.View
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.travelbus.R
-import kotlinx.android.synthetic.main.fragment_select_journey_type.*
+import kotlinx.android.synthetic.main.fragment_bus_hire_detail.*
 
-class SelectJourneyTypeFragment : Fragment(R.layout.fragment_select_journey_type) {
+class BusHireDetailFragment : Fragment(R.layout.fragment_bus_hire_detail) {
     lateinit var navController: NavController
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
         navController = Navigation.findNavController(view)
 
-        btnGoToNext.setOnClickListener {
-            navController.navigate(R.id.action_selectJourneyTypeFragment_to_busHireDetailFragment)
+        btnbhProceed.setOnClickListener {
+            navController.navigate(R.id.action_busHireDetailFragment_to_fillContactDetailFragment)
         }
-
-
     }
+
 }

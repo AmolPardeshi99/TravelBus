@@ -167,7 +167,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvBus"
+                android:id="@+id/cvBusHire"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
@@ -216,7 +216,7 @@
                 app:cardElevation="12dp"
                 app:cardMaxElevation="12dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/cvBus">
+                app:layout_constraintTop_toBottomOf="@id/cvBusHire">
 
                 <TextView
                     android:layout_width="match_parent"
