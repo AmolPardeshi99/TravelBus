@@ -17,8 +17,8 @@ import androidx.fragment.app.FragmentManager
 class PaymentFragment : Fragment(R.layout.fragment_payment) {
     override fun onAttach(context: Context) {
         super.onAttach(context)
-
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         cvBanking.setOnClickListener {
@@ -26,5 +26,4 @@ class PaymentFragment : Fragment(R.layout.fragment_payment) {
             activity?.supportFragmentManager?.let { it1 -> bottomSheet.show(it1, "ModalBottomSheet") }
         }
     }
-
 }
