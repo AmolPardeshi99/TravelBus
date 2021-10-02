@@ -7,28 +7,20 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.example.travelbus.R
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import kotlinx.android.synthetic.main.bottom_upi_layout.view.*
+import kotlinx.android.synthetic.main.bottom_phonepay_layout.view.btnPay
 
-class BottomSheetUpiAdapter: BottomSheetDialogFragment() {
-
-
+class BottomSheetPhonePay : BottomSheetDialogFragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view1 = inflater.inflate(R.layout.bottom_upi_layout, container, false)
+        val view1 = inflater.inflate(R.layout.bottom_phonepay_layout, container, false)
 
         view1.btnPay.setOnClickListener {
-            Toast.makeText(context, "hey ", Toast.LENGTH_LONG).show()
+            Toast.makeText(context, "payment done    ", Toast.LENGTH_LONG).show()
         }
 
-
-        view1.ivPhonePay.setOnClickListener {
-            val bottomSheet = BottomSheetUpiAdapter()
-            activity?.supportFragmentManager?.let { it1 -> bottomSheet.show(it1, "ModalBottomSheet") }
-            dismiss()
-        }
 
         return  view1;
     }
@@ -36,4 +28,5 @@ class BottomSheetUpiAdapter: BottomSheetDialogFragment() {
     override fun getTheme(): Int {
         return R.style.AppBottomSheetDialogTheme
     }
+
 }
