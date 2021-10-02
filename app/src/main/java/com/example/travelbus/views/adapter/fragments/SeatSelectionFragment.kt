@@ -32,7 +32,6 @@ class SeatSelectionFragment : Fragment(R.layout.fragment_seat_selection), SeatCl
         navController = Navigation.findNavController(view)
         getBusesData()
 
-
         setRecyclerView()
         recyclerViewBus.setOnClickListener{
             Toast.makeText(activity, "RV Clicked!", Toast.LENGTH_SHORT).show()
@@ -49,8 +48,6 @@ class SeatSelectionFragment : Fragment(R.layout.fragment_seat_selection), SeatCl
         }
 
     }
-
-
 
     private fun setRecyclerView() {
         recyclerViewBus.layoutManager = GridLayoutManager(context, 5)

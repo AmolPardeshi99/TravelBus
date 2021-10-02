@@ -72,6 +72,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
+                        android:id="@+id/ivSwap"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="25dp"
@@ -98,7 +99,7 @@
                         android:layout_height="wrap_content"
                         android:drawableLeft="@drawable/ic_calender"
                         android:drawablePadding="18dp"
-                        android:hint="Wed, 22 Sep"
+                        android:hint="Enter Date"
                         android:textColor="@color/black"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/etEnterDestination" />

@@ -20,12 +20,7 @@ class BottomSheetUpiAdapter: BottomSheetDialogFragment() {
         val view1 = inflater.inflate(R.layout.bottom_upi_layout, container, false)
 
         view1.btnPay.setOnClickListener {
-            Toast.makeText(context, "hey ", Toast.LENGTH_LONG).show()
-        }
-
-
-        view1.ivPhonePay.setOnClickListener {
-            val bottomSheet = BottomSheetUpiAdapter()
+            val bottomSheet = BottomSheetPhonePay()
             activity?.supportFragmentManager?.let { it1 -> bottomSheet.show(it1, "ModalBottomSheet") }
             dismiss()
         }
