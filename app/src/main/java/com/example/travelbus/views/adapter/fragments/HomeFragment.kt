@@ -44,7 +44,7 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
         dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK)
         currentMonth = calendar.get(Calendar.MONTH)
         currentDay = calendar.get(Calendar.DAY_OF_MONTH)
-        Log.d("abhishek", "$currentDay $dayOfWeek $currentMonth")
+        Log.d("amol", "$currentDay $dayOfWeek $currentMonth")
         arguments?.run {
             area = getString("area").toString()
             address = getString("address").toString()
@@ -79,6 +79,7 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
         etEnterSource.setOnClickListener {
             clickListener.sourceSearchClicked(etEnterSource.text.toString(), etEnterDestination.text.toString())
         }
+
         etEnterDestination.setOnClickListener {
             clickListener.destinationSearchClicked(etEnterSource.text.toString(), etEnterDestination.text.toString())
         }

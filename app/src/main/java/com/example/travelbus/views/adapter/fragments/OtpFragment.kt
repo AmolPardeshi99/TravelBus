@@ -82,10 +82,15 @@ class OtpFragment : Fragment(R.layout.fragment_otp) {
         tvTermCondtnOtp.setText(Html.fromHtml(term1 + term2 + term3 + term4))
 
 
-
         btnConfirmOtp.setOnClickListener {
             startActivity(Intent(activity?.applicationContext, HomeActivity::class.java))
         }
+    }
+
+
+    //function for getting colour text
+    private fun getColoredSpanned(text: String, color: String): String {
+        return "<font color=$color>$text</font>"
     }
 
     @RequiresApi(Build.VERSION_CODES.N)
@@ -98,13 +103,6 @@ class OtpFragment : Fragment(R.layout.fragment_otp) {
             view_timer.stop()
         }
     }
-
-    //function for getting colour text
-    private fun getColoredSpanned(text: String, color: String): String {
-        return "<font color=$color>$text</font>"
-    }
-
-
 
     private val mCallbacks: PhoneAuthProvider.OnVerificationStateChangedCallbacks =
         object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {

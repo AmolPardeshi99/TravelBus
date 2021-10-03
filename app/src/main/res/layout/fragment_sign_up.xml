@@ -61,7 +61,7 @@
         android:text="Enter Mobile Number"
         android:textColor="@color/materialRed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvLoginUsing"/>
+        app:layout_constraintTop_toBottomOf="@id/tvLoginUsing" />
 
 
     <EditText
@@ -70,15 +70,15 @@
         android:layout_height="50dp"
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="7dp"
-        android:textCursorDrawable="@null"
-        android:inputType="phone"
-        android:textColor="@color/black"
         android:background="@drawable/rectangle_border"
         android:drawableStart="@drawable/ic_call_icon"
         android:drawablePadding="10dp"
         android:fontFamily="@font/montserrat"
         android:hint="@string/mobile_number"
+        android:inputType="phone"
         android:padding="5dp"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvEnterMoNum" />
@@ -89,6 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
+        android:buttonTint="@color/materialRed"
         android:text="I have a referral code"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.064"
@@ -105,27 +106,25 @@
         android:background="@drawable/rectangle_border"
         android:drawableStart="@drawable/ic_referral_icon"
         android:drawablePadding="10dp"
-        android:textCursorDrawable="@null"
-        android:textColor="@color/black"
         android:fontFamily="@font/montserrat"
         android:hint="Referral Code"
         android:padding="5dp"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/checkBox" />
 
 
-
     <TextView
-        android:id="@+id/tvTermCondtn"
+        android:id="@+id/tvTermCondtn123"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="@string/term_and_condition"
-        android:textColor="@color/black"
-        android:textStyle="bold"
+        android:textColor="#9FA1A3"
         app:layout_constraintBottom_toTopOf="@+id/btnSignUp" />
 
     <Button
@@ -140,7 +139,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
