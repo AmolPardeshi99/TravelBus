@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E5E5E5"
+    android:background="#FDF8F8"
     tools:context=".views.adapter.fragments.LocationSearchFragment">
 
     <ImageButton
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
-        android:background="#E5E5E5"
+        android:background="#FDF8F8"
         android:fontFamily="@font/montserrat"
         android:hint="Search"
         android:textCursorDrawable="@null"

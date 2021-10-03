@@ -17,15 +17,15 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
                 android:text="red:Buddy"
                 android:textColor="@color/white"
                 android:textSize="21sp"
-                android:textStyle="bold"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"/>
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -60,21 +60,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="5dp"
-                app:cardMaxElevation="12dp">
+                app:cardCornerRadius="8dp">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="20dp"
+                    android:paddingVertical="20dp"
                     android:background="@color/simple_grey">
+
                     <ImageView
                         android:id="@+id/ivBus"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dp"
-                        android:src="@drawable/ic_bus_front_view"/>
+                        android:src="@drawable/ic_bus_front_view" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -100,29 +99,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                app:cardCornerRadius="4dp"
-                app:cardElevation="5dp"
-                app:cardMaxElevation="12dp">
+                app:cardCornerRadius="4dp">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="20dp"
+                    android:paddingVertical="20dp"
                     android:background="@color/simple_grey">
+
                     <ImageView
                         android:id="@+id/ivAdvisory"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dp"
-                        android:src="@drawable/ic_advisory"/>
+                        android:src="@drawable/ic_advisory" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@+id/ivAdvisory"
-                        android:text="New bus booking help"
-                        android:layout_marginLeft="10dp"
                         android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/ivAdvisory"
+                        android:text="COVID-19 travel advisory"
                         android:textColor="@color/black"
                         android:textSize="18sp" />
 
@@ -140,13 +138,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                app:cardCornerRadius="4dp"
-                app:cardElevation="5dp"
-                app:cardMaxElevation="12dp">
+                app:cardCornerRadius="4dp">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="20dp"
+                    android:paddingVertical="20dp"
                     android:background="@color/simple_grey">
 
                     <ImageView
@@ -163,7 +159,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/ivSafety"
-                        android:text="New bus booking help"
+                        android:text="Safety + Features"
                         android:textColor="@color/black"
                         android:textSize="18sp" />
 
@@ -181,13 +177,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                app:cardCornerRadius="4dp"
-                app:cardElevation="5dp"
-                app:cardMaxElevation="12dp">
+                app:cardCornerRadius="4dp">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="20dp"
+                    android:paddingVertical="20dp"
                     android:background="@color/simple_grey">
                     <ImageView
                         android:id="@+id/ivTechnical"
@@ -200,10 +194,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@+id/ivTechnical"
-                        android:text="New bus booking help"
-                        android:layout_marginLeft="10dp"
                         android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/ivTechnical"
+                        android:text="Technical Issues"
                         android:textColor="@color/black"
                         android:textSize="18sp" />
 
@@ -221,13 +215,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                app:cardCornerRadius="4dp"
-                app:cardElevation="5dp"
-                app:cardMaxElevation="14dp">
+                app:cardCornerRadius="4dp">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="20dp"
+                    android:paddingVertical="20dp"
                     android:background="@color/simple_grey">
 
                     <ImageView
@@ -244,7 +236,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/ivReferral"
-                        android:text="New bus booking help"
+                        android:text="redBus Referral Help"
                         android:textColor="@color/black"
                         android:textSize="18sp" />
 
@@ -262,13 +254,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                app:cardCornerRadius="4dp"
-                app:cardElevation="5dp"
-                app:cardMaxElevation="12dp">
+                app:cardCornerRadius="4dp">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="20dp"
+                    android:paddingVertical="20dp"
                     android:background="@color/simple_grey">
 
                     <ImageView
@@ -285,7 +275,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/ivOffers"
-                        android:text="New bus booking help"
+                        android:text="Offers"
                         android:textColor="@color/black"
                         android:textSize="18sp" />
 
@@ -303,13 +293,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                app:cardCornerRadius="4dp"
-                app:cardElevation="5dp"
-                app:cardMaxElevation="12dp">
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="4dp">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="20dp"
+                    android:paddingVertical="20dp"
                     android:background="@color/simple_grey">
 
                     <ImageView
@@ -323,10 +312,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@+id/ivCar"
-                        android:text="New bus booking help"
-                        android:layout_marginLeft="10dp"
                         android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/ivCar"
+                        android:text="rPool Help"
                         android:textColor="@color/black"
                         android:textSize="18sp" />
 
