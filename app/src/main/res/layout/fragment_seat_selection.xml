@@ -34,7 +34,7 @@
             android:fontFamily="@font/montserrat"
             android:gravity="center"
             android:paddingHorizontal="20dp"
-            android:text="22 Sep-15:00"
+            android:text="04 Oct-12:30"
             android:textColor="@color/white"
             android:textSize="15sp"
             android:textStyle="normal"
@@ -51,7 +51,7 @@
             android:gravity="center"
             android:paddingHorizontal="20dp"
             android:layout_marginTop="5dp"
-            android:text="Neeta tours and travels"
+            android:text="R C Travels"
             android:textColor="@color/white"
             android:textSize="17sp"
             android:textStyle="bold"
@@ -103,6 +103,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:scrollbars="none"
         app:layout_constraintBottom_toTopOf="@+id/bottomBusDetailsMenu"
         app:layout_constraintTop_toBottomOf="@+id/viewSeatSelectionHeader">
 

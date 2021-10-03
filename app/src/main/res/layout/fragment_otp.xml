@@ -206,8 +206,8 @@
         android:gravity="center"
         android:foregroundGravity="center"
         android:text="@string/term_and_condition"
-        android:textColor="@color/black"
-        android:textStyle="bold"
+        android:textColor="#9FA1A3"
+        android:textStyle="normal"
         app:layout_constraintBottom_toTopOf="@+id/btnConfirmOtp" />
 
     <Button

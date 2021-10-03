@@ -8,6 +8,7 @@ import android.view.View
 import com.example.travelbus.R
 import com.example.travelbus.models.local.BookingDetails
 import com.example.travelbus.views.adapter.activities.BusBookingActivity
+import com.example.travelbus.views.adapter.activities.BusHireActivity
 import com.example.travelbus.views.adapter.adapters.PlacesAdapter
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -43,7 +44,7 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
         dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK)
         currentMonth = calendar.get(Calendar.MONTH)
         currentDay = calendar.get(Calendar.DAY_OF_MONTH)
-        Log.d("abhishek", "$currentDay $dayOfWeek $currentMonth")
+        Log.d("amol", "$currentDay $dayOfWeek $currentMonth")
         arguments?.run {
             area = getString("area").toString()
             address = getString("address").toString()
@@ -78,6 +79,7 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
         etEnterSource.setOnClickListener {
             clickListener.sourceSearchClicked(etEnterSource.text.toString(), etEnterDestination.text.toString())
         }
+
         etEnterDestination.setOnClickListener {
             clickListener.destinationSearchClicked(etEnterSource.text.toString(), etEnterDestination.text.toString())
         }
@@ -125,6 +127,11 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
             etDate.setText("$dayName, ${currentDay+1} $month_Name")
         }
 
+        cvBusHire.setOnClickListener {
+            startActivity(Intent(context,BusHireActivity::class.java))
+
+        }
+
         etDate.setOnClickListener {
 
         }
@@ -136,9 +143,6 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
             if (id != null) {
                 userRef.document(id).get().addOnSuccessListener { doc->
                     if (doc.data?.get("bookings") != null) {
-//                        val bookings:ArrayList<String> = doc.data?.get("bookings") as ArrayList<String>
-//                        val list: ArrayList<String> = bookings
-//                        list.add(booking_id)
                         userRef.document(id).update("bookings", booking_id)
                         //Log.d("abhishek", bookings.toString())
 
@@ -150,6 +154,10 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
                 }
             }
         }
+
+
+        // Bus Hire
+
     }
 
     class BookingModel(

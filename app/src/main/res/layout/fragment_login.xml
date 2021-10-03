@@ -68,7 +68,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginHorizontal="15dp"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/black"
         android:layout_marginTop="7dp"
+        android:inputType="phone"
         android:background="@drawable/rectangle_border"
         android:drawableStart="@drawable/ic_call_icon"
         android:drawablePadding="10dp"
@@ -88,8 +91,7 @@
         android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="@string/term_and_condition"
-        android:textColor="@color/black"
-        android:textStyle="bold"
+        android:textColor="#9FA1A3"
         app:layout_constraintBottom_toTopOf="@+id/btnLogIn" />
 
     <Button
