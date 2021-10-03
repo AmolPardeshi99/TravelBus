@@ -6,6 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.travelbus.R
 import kotlinx.android.synthetic.main.activity_payment_success.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class PaymentSuccessActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +23,10 @@ class PaymentSuccessActivity : AppCompatActivity() {
         videoView.setOnPreparedListener { mp -> mp.start() }
 
         videoView.setOnCompletionListener {
-            startActivity(Intent(this, HomeActivity::class.java))
+            CoroutineScope(Dispatchers.Main).launch {
+                delay(500)
+                startActivity(Intent(applicationContext, HomeActivity::class.java))
+            }
         }
 
         tvBack.setOnClickListener {

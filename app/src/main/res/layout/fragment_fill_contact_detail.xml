@@ -35,6 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
+        android:background="@color/materialRed"
         android:text="VIEW VEHICLES"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,37 +46,42 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:src="@drawable/ic_yousafe_img"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/you_are_safe"
         app:layout_constraintBottom_toTopOf="@+id/btnViewVehicle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
-        android:src="@drawable/ic_yesteraday_img"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/yesteraday_img"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
         android:layout_width="match_parent"
         android:layout_height="380dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
         android:elevation="12dp"
         app:cardMaxElevation="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView3">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
 
             <TextView
                 android:id="@+id/tvbhPhoneNum"
@@ -88,8 +94,8 @@
                 android:textColor="@color/black"
                 android:textSize="15dp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@id/etbhEmail"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etbhEmail" />
 
             <EditText
                 android:id="@+id/etbhPhoneNum"
@@ -102,8 +108,8 @@
                 android:inputType="textPersonName"
                 android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvbhPhoneNum"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvbhPhoneNum" />
 
             <TextView
                 android:id="@+id/tvbhEmail"
@@ -205,13 +211,14 @@
         android:id="@+id/imageView4"
         android:layout_width="390dp"
         android:layout_height="127dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/we_need_contact"
         android:scaleType="fitXY"
-        android:src="@drawable/ic_we_need_contact"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
