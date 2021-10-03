@@ -36,9 +36,9 @@ class OtpFragment : Fragment(R.layout.fragment_otp) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         // code for timer
+        setClouredText()
         setTimer()
         // Code for underline and coloured text
-        setClouredText()
 
         auth = Firebase.auth
         getIntentData()
