@@ -24,22 +24,30 @@ class SeatSelectionFragment : Fragment(R.layout.fragment_seat_selection), SeatCl
     private val busRef = db.collection("Buses")
     private var listOfSeats = ArrayList<Seats>()
     lateinit var busSeatAdapter: BusSeatAdapter
+    var bus_id = ""
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         busSeatAdapter = BusSeatAdapter(listOfSeats, this)
         navController = Navigation.findNavController(view)
         getBusesData()
-        btnSignupFrag.setOnClickListener {
-            navController.navigate(R.id.action_seatSelectionFragment_to_passengerDetailsFragment)
-        }
+
         setRecyclerView()
         recyclerViewBus.setOnClickListener{
             Toast.makeText(activity, "RV Clicked!", Toast.LENGTH_SHORT).show()
         }
+
+        arguments?.run {
+            bus_id = getString("bus_id").toString()
+        }
+
+        btnSignupFrag.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("bus_id",bus_id)
+            navController.navigate(R.id.action_seatSelectionFragment_to_passengerDetailsFragment,bundle)
+        }
+
     }
-
-
 
     private fun setRecyclerView() {
         recyclerViewBus.layoutManager = GridLayoutManager(context, 5)

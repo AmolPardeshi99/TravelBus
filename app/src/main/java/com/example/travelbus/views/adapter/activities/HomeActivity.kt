@@ -23,6 +23,7 @@ class HomeActivity : AppCompatActivity(), PlacesAdapter.ClickListener {
 
 
     private fun setBottomNavigation() {
+
         supportFragmentManager.beginTransaction().replace(R.id.nav_host_fragment, HomeFragment(this)).commit()
 
         menu_bottom.setOnItemSelectedListener(NavigationBarView.OnItemSelectedListener { item ->
@@ -88,6 +89,7 @@ class HomeActivity : AppCompatActivity(), PlacesAdapter.ClickListener {
         fragment.arguments = bundle
         supportFragmentManager.beginTransaction().add(R.id.nav_host_fragment, fragment).addToBackStack("Source Search Fragment").commit()
         menu_bottom.visibility = View.GONE
+
     }
 
     override fun destinationSearchClicked(sourceText : String, destinationText : String) {

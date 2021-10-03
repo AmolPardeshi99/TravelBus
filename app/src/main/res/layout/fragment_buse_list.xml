@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
         android:padding="8dp"
-        android:text="125 Buses Founded"
+        android:text="78 Buses Founded"
         app:layout_constraintTop_toBottomOf="@id/tvBusListHeading" />
 
 

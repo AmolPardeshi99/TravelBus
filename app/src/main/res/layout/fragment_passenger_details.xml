@@ -130,7 +130,7 @@
                     android:paddingHorizontal="16dp">
 
                     <EditText
-                        android:id="@+id/etEmail"
+                        android:id="@+id/etPassengerEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableLeft="@drawable/ic_mail"
@@ -148,7 +148,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <EditText
-                        android:id="@+id/etEnterMobile"
+                        android:id="@+id/etEnterPassengerMobile"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableLeft="@drawable/ic_phone"
@@ -164,7 +164,7 @@
                         android:drawableTint="@color/light_grey"
                         android:hint="Mobile Number"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/etEmail" />
+                        app:layout_constraintTop_toBottomOf="@id/etPassengerEmail" />
 
                     <TextView
                         android:id="@+id/tvWhatsappPermissionLabel"
@@ -177,7 +177,7 @@
                         android:textSize="12sp"
                         android:text="Send booking details and updates on Whatsapp number 8618837172"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/etEnterMobile"
+                        app:layout_constraintTop_toBottomOf="@id/etEnterPassengerMobile"
                         android:layout_marginTop="10dp"/>
 
                     <com.google.android.material.switchmaterial.SwitchMaterial
@@ -189,7 +189,7 @@
                         app:trackTint="@color/switch_track"
                         android:buttonTintMode="@color/materialRed"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/etEnterMobile"
+                        app:layout_constraintTop_toBottomOf="@id/etEnterPassengerMobile"
 
                         />
 
@@ -230,7 +230,7 @@
                     android:paddingHorizontal="16dp">
 
                     <EditText
-                        android:id="@+id/etName"
+                        android:id="@+id/etPassengerName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Name"
@@ -245,7 +245,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <EditText
-                        android:id="@+id/etAge"
+                        android:id="@+id/etPassengerAge"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="12dp"
@@ -258,7 +258,7 @@
                         android:textColorHint="@color/light_grey_2"
                         android:hint="Age"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/etName" />
+                        app:layout_constraintTop_toBottomOf="@id/etPassengerName" />
 
                     <TextView
                         android:id="@+id/tvGender"
@@ -270,7 +270,7 @@
                         android:layout_marginLeft="10dp"
                         android:textColor="@color/light_grey_2"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/etAge"/>
+                        app:layout_constraintTop_toBottomOf="@id/etPassengerAge"/>
 
                     <RadioGroup
                         android:id="@+id/radioGroup"

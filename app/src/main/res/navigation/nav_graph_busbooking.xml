@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_seatSelectionFragment_to_passengerDetailsFragment"
             app:destination="@id/passengerDetailsFragment" />
+        <action
+            android:id="@+id/action_seatSelectionFragment_to_boardingDroppingFragment2"
+            app:destination="@id/boardingDroppingFragment" />
     </fragment>
     <fragment
         android:id="@+id/passengerDetailsFragment"
@@ -37,4 +40,10 @@
         android:name="com.example.travelbus.views.adapter.fragments.PaymentFragment"
         android:label="fragment_payment"
         tools:layout="@layout/fragment_payment" />
+    <fragment
+        android:id="@+id/boardingDroppingFragment"
+        android:name="com.example.travelbus.views.adapter.fragments.BoardingDroppingFragment"
+        android:label="fragment_boarding_dropping"
+        tools:layout="@layout/fragment_boarding_dropping" />
+
 </navigation>
