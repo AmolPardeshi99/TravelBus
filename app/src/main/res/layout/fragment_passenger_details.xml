@@ -307,7 +307,6 @@
                             android:textColor="@color/light_grey"
                             android:textSize="18dp"/>
 
-
                     </RadioGroup>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
