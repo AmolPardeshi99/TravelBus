@@ -1,5 +1,8 @@
 package com.example.travelbus.views.adapter.fragments
 
+import android.app.Dialog
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -11,35 +14,25 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.travelbus.R
 import com.example.travelbus.models.local.Seats
+import com.example.travelbus.views.adapter.adapters.BottomSheetUpiAdapter
 import com.example.travelbus.views.adapter.adapters.BusSeatAdapter
 import com.example.travelbus.views.adapter.adapters.SeatClickedListener
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.ListenerRegistration
+import com.example.travelbus.views.adapter.adapters.SheetSeatInfoAdapter
 import com.google.firebase.firestore.SetOptions
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import kotlinx.android.synthetic.main.fragment_buse_list.*
 import kotlinx.android.synthetic.main.fragment_seat_selection.*
 
 class SeatSelectionFragment : Fragment(R.layout.fragment_seat_selection), SeatClickedListener {
     lateinit var navController: NavController
-
-    private var listOfSeats = ArrayList<Seats>()
-    lateinit var busSeatAdapter: BusSeatAdapter
-
     private val db = Firebase.firestore
     private val busRef = db.collection("Buses")
-    private val bookingRef = db.collection("bookings")
-    private val userRef = db.collection("users")
-    private lateinit var auth: FirebaseAuth
-//    lateinit var bookingRefListener: ListenerRegistration
-//    lateinit var userRefListener: ListenerRegistration
-
+    private var listOfSeats = ArrayList<Seats>()
+    lateinit var busSeatAdapter: BusSeatAdapter
+    var bus_id = ""
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        auth = Firebase.auth
         busSeatAdapter = BusSeatAdapter(listOfSeats, this)
         navController = Navigation.findNavController(view)
         getBusesData()
@@ -49,33 +42,22 @@ class SeatSelectionFragment : Fragment(R.layout.fragment_seat_selection), SeatCl
             Toast.makeText(activity, "RV Clicked!", Toast.LENGTH_SHORT).show()
         }
 
+        arguments?.run {
+            bus_id = getString("bus_id").toString()
+        }
+
+        btnSeatInfoIcon.setOnClickListener {
+            val bottomSheet = SheetSeatInfoAdapter()
+            activity?.supportFragmentManager?.let { it1 -> bottomSheet.show(it1, "ModalBottomSheet") }
+        }
+
         btnSignupFrag.setOnClickListener {
-            navController.navigate(R.id.action_seatSelectionFragment_to_passengerDetailsFragment)
+            val bundle = Bundle()
+            bundle.putString("bus_id",bus_id)
+            navController.navigate(R.id.action_seatSelectionFragment_to_passengerDetailsFragment,bundle)
         }
 
     }
-
-//    private fun setBusData() {
-//        auth.currentUser?.uid.let { id ->
-//            if (id != null) {
-//                userRefListener =  userRef.document(id).addSnapshotListener() { snapshot, e ->
-//                    if (snapshot != null && snapshot.exists()) {
-//                        var bookingId = snapshot.data?.get("bookings")
-//                        bookingRefListener = bookingRef.document(bookingId.toString()).addSnapshotListener() { snapshotBooking, ec ->
-//                            val date = snapshotBooking?.data?.get("date")
-//                            val busId = snapshotBooking?.data?.get("bus_Id")
-//                            Log.d("abhishek", "$date $busId")
-//                            busRef.document(busId.toString()).addSnapshotListener() { busSnapshot, err ->
-//                                val name = busSnapshot?.data?.get("name")
-//                                Log.d("abhi", name.toString())
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//    }
-
 
     private fun setRecyclerView() {
         recyclerViewBus.layoutManager = GridLayoutManager(context, 5)
