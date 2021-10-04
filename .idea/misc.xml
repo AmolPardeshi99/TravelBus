@@ -66,25 +66,25 @@
         <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/activity_payment_success.xml" value="0.23114035087719298" />
         <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/bottom_phonepay_layout.xml" value="0.176" />
         <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/bottom_upi_layout.xml" value="0.264" />
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_buse_list.xml" value="0.23114035087719298" />
         <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_home.xml" value="0.4" />
         <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_my_bookings.xml" value="0.23114035087719298" />
         <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_passenger_details.xml" value="0.2" />
         <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_payment.xml" value="0.264" />
         <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_payment_success.xml" value="0.23114035087719298" />
+        <entry key="..\:/Programs/Android/ConstructWeekProject/TravelBus/app/src/main/res/layout/fragment_seat_selection.xml" value="0.536" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/blue_rectangleborder.xml" value="0.22763157894736843" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/ic_back_button.xml" value="0.2703125" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/ic_rectangle.xml" value="0.2703125" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/otp_box.xml" value="0.2703125" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/rectangle_border.xml" value="0.26615384615384613" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/selected_pager_dot.xml" value="0.2703125" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/selector_box.xml" value="0.2703125" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/selector_match_team.xml" value="0.2703125" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_home.xml" value="0.1" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/blue_rectangleborder.xml" value="0.22763157894736843" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/ic_select_package.xml" value="0.22763157894736843" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/ic_wallet.xml" value="0.22763157894736843" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/ic_wallet_black.xml" value="0.22763157894736843" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/ic_yesteraday_img.xml" value="0.22763157894736843" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/otp_box.xml" value="0.2703125" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/rectangle_border.xml" value="0.22763157894736843" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/selected_pager_dot.xml" value="0.2703125" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/selector_box.xml" value="0.2703125" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/selector_match_team.xml" value="0.2703125" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/thumb.xml" value="0.22763157894736843" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/drawable/track.xml" value="0.22763157894736843" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/TravelBus/app/src/main/res/layout/activity_bus_booking.xml" value="0.21403508771929824" />
