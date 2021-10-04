@@ -291,7 +291,7 @@
                             android:scaleY="0.7"
                             android:text="Male"
                             android:padding="3dp"
-                            android:buttonTint="@color/grey_3_radio"
+                            android:buttonTint="@color/materialRed"
                             android:textColor="@color/light_grey"
                             android:textSize="18dp"/>
 
@@ -303,7 +303,7 @@
                             android:scaleY="0.7"
                             android:text="Female"
                             android:padding="3dp"
-                            android:buttonTint="@color/grey_3_radio"
+                            android:buttonTint="@color/materialRed"
                             android:textColor="@color/light_grey"
                             android:textSize="18dp"/>
 
@@ -316,7 +316,7 @@
                             android:scaleY="0.7"
                             android:text="Other"
                             android:padding="3dp"
-                            android:buttonTint="@color/grey_3_radio"
+                            android:buttonTint="@color/materialRed"
                             android:textColor="@color/light_grey"
                             android:textSize="18dp"/>
 
