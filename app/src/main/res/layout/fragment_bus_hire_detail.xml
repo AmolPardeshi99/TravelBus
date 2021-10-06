@@ -72,7 +72,7 @@
                         android:layout_marginTop="12dp"
                         android:background="@drawable/rectangle_border"
                         android:fontFamily="@font/montserrat"
-                        android:hint="Enter Name"
+                        android:hint="Enter pickup location"
                         android:inputType="textPersonName"
                         android:padding="10dp"
                         android:textSize="12sp"
@@ -111,7 +111,7 @@
                         android:layout_marginTop="36dp"
                         android:background="@drawable/rectangle_border"
                         android:fontFamily="@font/montserrat"
-                        android:hint="Enter Name"
+                        android:hint="Enter destination location"
                         android:inputType="textPersonName"
                         android:padding="10dp"
                         android:textSize="12sp"
@@ -147,7 +147,7 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:id="@+id/tvbhSelectPackage"
@@ -206,6 +206,8 @@
                         app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
 
                     <ImageView
+                        android:visibility="visible"
+                        android:id="@+id/imaPackageSelected"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="10dp"
@@ -246,7 +248,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/btn"
                         android:layout_width="320dp"
                         android:layout_height="50dp"
@@ -257,8 +259,8 @@
                         android:drawablePadding="10dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center_vertical"
-                        android:hint="30, Sep"
-                        android:inputType="textPersonName"
+                        android:hint="Date &amp; Time"
+                        android:inputType="datetime"
                         android:padding="10dp"
                         android:textSize="12sp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -296,7 +298,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/tvNumberOfPassenger2"
                         android:layout_width="320dp"
                         android:layout_height="50dp"
@@ -306,8 +308,8 @@
                         android:background="@drawable/rectangle_border"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center_vertical"
-                        android:hint="60"
-                        android:inputType="textPersonName"
+                        android:hint="Enter Number of Passengers"
+                        android:inputType="number"
                         android:padding="10dp"
                         android:textSize="12sp"
                         app:layout_constraintStart_toStartOf="parent"

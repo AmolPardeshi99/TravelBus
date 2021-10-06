@@ -26,9 +26,6 @@ class PassengerDetailsFragment : Fragment(R.layout.fragment_passenger_details) {
     var bookingRef = db.collection("bookings")
     lateinit var navController: NavController
 
-
-    var bus_id = ""
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
@@ -36,11 +33,6 @@ class PassengerDetailsFragment : Fragment(R.layout.fragment_passenger_details) {
 
         btnProceed.setOnClickListener {
             getBookingId()
-        }
-
-        arguments?.run {
-            bus_id = getString("bus_id").toString()
-            Log.d("abhishek", bus_id)
         }
     }
 
@@ -69,7 +61,6 @@ class PassengerDetailsFragment : Fragment(R.layout.fragment_passenger_details) {
             email = etPassengerEmail.text.toString()
             phone = etEnterPassengerMobile.text.toString()
 
-            bookingRef.document(bookingId).update("bus_id" , bus_id)
             bookingRef.document(bookingId).update("email" , email)
             bookingRef.document(bookingId).update("mobile" , phone)
 
@@ -77,6 +68,7 @@ class PassengerDetailsFragment : Fragment(R.layout.fragment_passenger_details) {
                 "name" to name,
                 "age" to age
             )
+
             bookingRef.document(bookingId).collection("passenger").add(data)
 
             navController.navigate(R.id.action_passengerDetailsFragment_to_paymentFragment)
