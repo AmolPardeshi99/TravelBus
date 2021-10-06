@@ -43,7 +43,7 @@ class RedBusBookingCompletedFragment : Fragment(R.layout.fragment_red_bus_bookin
     }
 
     private fun setAdapter(bookingId: String) {
-        bookingList.add(BookingDetails("03 Oct 2021, Monday", "Pune", "Mumbai", "149.3kms", "299/- Paid Via Phonepe"))
+        bookingList.add(BookingDetails("04 Oct 2021, Monday", "Pune", "Mumbai", "149.3kms", "299/- Paid Via Phonepe"))
         val bookingListAdapter = BookingListAdapter(bookingList)
         val linearLayoutManager  = LinearLayoutManager(activity)
 

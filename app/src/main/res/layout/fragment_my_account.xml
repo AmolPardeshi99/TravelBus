@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="17dp"
                 android:fontFamily="@font/montserrat"
-                android:text="Name Middle Name Sirname"
+                android:text="Abhishek"
                 android:textColor="@color/white"
                 android:textSize="17dp" />
 
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat"
-                android:text="9852485698"
+                android:text="7777011329"
                 android:textColor="@color/white"
                 android:textSize="17dp" />
 
