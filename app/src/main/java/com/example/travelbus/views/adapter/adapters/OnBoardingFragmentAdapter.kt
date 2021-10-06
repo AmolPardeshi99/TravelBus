@@ -16,9 +16,9 @@ class OnBoardingFragmentAdapter(val context: Context) : PagerAdapter(){
 
     private lateinit var layoutInflater: LayoutInflater
     private val images = arrayOf(
-        R.drawable.ic_easy_booking.toDrawable(),
-        R.drawable.ic_manage_trips.toDrawable(),
-        R.drawable.ic_track_bus.toDrawable()
+        R.drawable.easy_booking,
+        R.drawable.manage_trips,
+        R.drawable.track_bus
     )
 
     override fun getCount(): Int {
@@ -35,7 +35,7 @@ class OnBoardingFragmentAdapter(val context: Context) : PagerAdapter(){
         val view: View = layoutInflater.inflate(R.layout.onboarding_custom_layout, null)
 
         val imageView = view.findViewById(R.id.onBoardingCustomImageView) as ImageView
-        imageView.background = (images[position])
+        imageView.setImageResource(images[position])
 
         val viewPager = container as ViewPager
         viewPager.addView(view)

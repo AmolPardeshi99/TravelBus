@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="none"
     tools:context=".views.adapter.fragments.HomeFragment">
 
     <LinearLayout
@@ -64,14 +65,19 @@
                         android:id="@+id/etEnterSource"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textCursorDrawable="@null"
+                        android:backgroundTint="@color/black_faded"
+                        android:textColor="@color/black"
                         android:drawableLeft="@drawable/ic_enter_source"
                         android:focusable="false"
                         android:drawablePadding="18dp"
                         android:hint="ENTER SOURCE"
+                        android:fontFamily="@font/montserrat"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
+                        android:id="@+id/ivSwap"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="25dp"
@@ -86,6 +92,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:focusable="false"
+                        android:fontFamily="@font/montserrat"
+                        android:textCursorDrawable="@null"
+                        android:backgroundTint="@color/black_faded"
+                        android:textColor="@color/black"
                         android:drawableLeft="@drawable/ic_enter_destination"
                         android:drawablePadding="18dp"
                         android:hint="ENTER DESTINATION"
@@ -97,9 +107,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableLeft="@drawable/ic_calender"
+                        android:focusable="false"
                         android:drawablePadding="18dp"
-                        android:hint="Wed, 22 Sep"
+                        android:textCursorDrawable="@null"
+                        android:backgroundTint="@color/black_faded"
+                        android:hint="Enter Date"
                         android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/etEnterDestination" />
 
@@ -161,18 +175,18 @@
                 android:fontFamily="@font/montserrat"
                 android:gravity="center"
                 android:text="YOU CAN ALSO BOOK"
-                android:textColor="@color/black"
+                android:textColor="@color/black_faded"
                 android:textSize="17sp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvBus"
+                android:id="@+id/cvBusHire"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 app:cardCornerRadius="4dp"
-                app:cardElevation="12dp"
+                app:cardElevation="5dp"
                 app:cardMaxElevation="12dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvLabelBook">
@@ -192,7 +206,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 app:cardCornerRadius="4dp"
-                app:cardElevation="12dp"
+                app:cardElevation="5dp"
                 app:cardMaxElevation="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvLabelBook">
@@ -213,10 +227,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
                 app:cardCornerRadius="4dp"
-                app:cardElevation="12dp"
+                app:cardElevation="5dp"
                 app:cardMaxElevation="12dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/cvBus">
+                app:layout_constraintTop_toBottomOf="@id/cvBusHire">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -234,7 +248,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
                 app:cardCornerRadius="4dp"
-                app:cardElevation="12dp"
+                app:cardElevation="5dp"
                 app:cardMaxElevation="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/cvCar">
@@ -255,7 +269,7 @@
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/montserrat"
                 android:text="OFFERS"
-                android:textColor="@color/black"
+                android:textColor="@color/black_faded"
                 android:textSize="17sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -293,6 +307,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
+                android:scrollbars="none"
                 android:background="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvOfferDescLabel">
@@ -320,6 +335,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
+                android:scrollbars="none"
                 android:background="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/scrollView1">

@@ -34,7 +34,7 @@
             android:fontFamily="@font/montserrat"
             android:gravity="center"
             android:paddingHorizontal="20dp"
-            android:text="22 Sep-15:00"
+            android:text="04 Oct-12:30"
             android:textColor="@color/white"
             android:textSize="15sp"
             android:textStyle="normal"
@@ -51,7 +51,7 @@
             android:gravity="center"
             android:paddingHorizontal="20dp"
             android:layout_marginTop="5dp"
-            android:text="Neeta tours and travels"
+            android:text="R C Travels"
             android:textColor="@color/white"
             android:textSize="17sp"
             android:textStyle="bold"
@@ -63,15 +63,16 @@
             android:id="@+id/tvBusDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:fontFamily="@font/montserrat"
             android:gravity="center"
             android:paddingHorizontal="20dp"
-            android:layout_marginTop="2dp"
             android:text="Bharat Benz A/C Seater(2+2)"
             android:textColor="@color/white"
             android:textSize="15sp"
             android:textStyle="normal"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvTravelAgencyDetails" />
 
@@ -100,9 +101,10 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:scrollbars="none"
         app:layout_constraintBottom_toTopOf="@+id/bottomBusDetailsMenu"
         app:layout_constraintTop_toBottomOf="@+id/viewSeatSelectionHeader">
 
@@ -269,7 +271,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottomBusDetailsMenu"

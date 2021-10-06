@@ -45,4 +45,5 @@
         android:name="com.example.travelbus.views.adapter.fragments.BoardingDroppingFragment"
         android:label="fragment_boarding_dropping"
         tools:layout="@layout/fragment_boarding_dropping" />
+
 </navigation>

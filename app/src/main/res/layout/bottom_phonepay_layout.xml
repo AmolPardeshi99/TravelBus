@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_dark_white"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/btnCloseRound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close_rounded"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivPhonePayLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_my_account"
+                android:gravity="center"
+                android:padding="13dp"
+                android:background="@drawable/phone_pay_background"
+                app:tint="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnCloseRound"/>
+
+            <TextView
+                android:id="@+id/tvPaymentOptionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="RED BUS"
+                android:textColor="@color/light_black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintStart_toEndOf="@id/ivPhonePayLogo"
+                app:layout_constraintTop_toBottomOf="@id/btnCloseRound" />
+
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/montserrat"
+                android:text="₹ 299.0"
+                android:textColor="@color/light_black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvPaymentOptionLabel" />
+
+            <TextView
+                android:id="@+id/tvBusDescLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="REDBUS2Bus"
+                android:textColor="@color/grey_3_radio"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintStart_toEndOf="@id/ivPhonePayLogo"
+                app:layout_constraintTop_toBottomOf="@id/tvPaymentOptionLabel"
+                />
+
+            <ImageView
+                android:id="@+id/ivTickLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_tick_logo"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintStart_toEndOf="@id/tvBusDescLabel"
+                app:layout_constraintTop_toTopOf="@id/tvBusDescLabel"
+                app:layout_constraintBottom_toBottomOf="@+id/tvBusDescLabel"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#FF900E"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_dark_white"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvWalletLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Wallet/ Gift Voucher"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="20dp"
+                android:drawablePadding="15sp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_wallet_black"
+                android:drawableTint="@color/grey_3_radio"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹0"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/light_black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvWalletLabel"
+                app:layout_constraintBottom_toBottomOf="@id/tvWalletLabel"
+                />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#DBDCDC"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvWalletLabel"
+                />
+
+
+            <TextView
+                android:id="@+id/tvBankOfBaroda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Bank of Baroda - 1774"
+                android:textColor="@color/light_black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="20dp"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/bank_of_baroda"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 299.0"
+                android:textSize="18sp"
+                android:textColor="@color/light_black"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvBankOfBaroda"
+                app:layout_constraintBottom_toBottomOf="@id/tvBankOfBaroda"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More Payment options"
+                android:textColor="#5F259E"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvBankOfBaroda"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#5F259E"
+            android:fontFamily="@font/montserrat"
+            android:paddingVertical="13dp"
+            android:text="Pay 299Rs."
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/paymentLinearLayout" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

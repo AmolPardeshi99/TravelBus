@@ -98,11 +98,13 @@
 
     </LinearLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnContinue"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@color/materialRed"
         android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
         android:text="Continue"
         tools:ignore="InvalidId" />
 

@@ -28,6 +28,7 @@
             android:text="Pune to Mumbai"
             android:textColor="@color/white"
             android:textSize="21sp" />
+
     </androidx.appcompat.widget.Toolbar>
 
     <RelativeLayout
@@ -90,6 +91,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
+        android:scrollbars="none"
         app:layout_constraintTop_toBottomOf="@id/cardBottomToolbar"
         app:layout_constraintBottom_toTopOf="@id/bottomBar">
 
@@ -107,8 +109,7 @@
                 android:textColor="@color/black"
                 android:textSize="17sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cvContact"
@@ -129,11 +130,14 @@
                     android:paddingHorizontal="16dp">
 
                     <EditText
-                        android:id="@+id/etEmail"
+                        android:id="@+id/etPassengerEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableLeft="@drawable/ic_mail"
                         android:drawablePadding="20dp"
+                        android:textCursorDrawable="@null"
+                        android:textColor="@color/black"
+                        android:inputType="textEmailAddress"
                         android:hint="Email ID"
                         android:padding="12dp"
                         android:textColorHint="@color/light_grey_2"
@@ -144,12 +148,15 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <EditText
-                        android:id="@+id/etEnterMobile"
+                        android:id="@+id/etEnterPassengerMobile"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableLeft="@drawable/ic_phone"
                         android:drawablePadding="20dp"
                         android:padding="12dp"
+                        android:inputType="phone"
+                        android:textCursorDrawable="@null"
+                        android:textColor="@color/black"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/montserrat"
                         android:backgroundTint="@color/light_grey_2"
@@ -157,7 +164,7 @@
                         android:drawableTint="@color/light_grey"
                         android:hint="Mobile Number"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/etEmail" />
+                        app:layout_constraintTop_toBottomOf="@id/etPassengerEmail" />
 
                     <TextView
                         android:id="@+id/tvWhatsappPermissionLabel"
@@ -170,7 +177,7 @@
                         android:textSize="12sp"
                         android:text="Send booking details and updates on Whatsapp number 8618837172"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/etEnterMobile"
+                        app:layout_constraintTop_toBottomOf="@id/etEnterPassengerMobile"
                         android:layout_marginTop="10dp"/>
 
                     <com.google.android.material.switchmaterial.SwitchMaterial
@@ -182,7 +189,7 @@
                         app:trackTint="@color/switch_track"
                         android:buttonTintMode="@color/materialRed"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/etEnterMobile"
+                        app:layout_constraintTop_toBottomOf="@id/etEnterPassengerMobile"
 
                         />
 
@@ -223,10 +230,13 @@
                     android:paddingHorizontal="16dp">
 
                     <EditText
-                        android:id="@+id/etName"
+                        android:id="@+id/etPassengerName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Name"
+                        android:textCursorDrawable="@null"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
                         android:padding="12dp"
                         android:textColorHint="@color/light_grey_2"
                         android:backgroundTint="@color/light_grey_2"
@@ -235,17 +245,20 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <EditText
-                        android:id="@+id/etAge"
+                        android:id="@+id/etPassengerAge"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="12dp"
+                        android:inputType="number"
+                        android:textCursorDrawable="@null"
+                        android:textColor="@color/black"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/montserrat"
                         android:backgroundTint="@color/light_grey_2"
                         android:textColorHint="@color/light_grey_2"
                         android:hint="Age"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/etName" />
+                        app:layout_constraintTop_toBottomOf="@id/etPassengerName" />
 
                     <TextView
                         android:id="@+id/tvGender"
@@ -257,7 +270,7 @@
                         android:layout_marginLeft="10dp"
                         android:textColor="@color/light_grey_2"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/etAge"/>
+                        app:layout_constraintTop_toBottomOf="@id/etPassengerAge"/>
 
                     <RadioGroup
                         android:id="@+id/radioGroup"
@@ -278,7 +291,7 @@
                             android:scaleY="0.7"
                             android:text="Male"
                             android:padding="3dp"
-                            android:buttonTint="@color/grey_3_radio"
+                            android:buttonTint="@color/materialRed"
                             android:textColor="@color/light_grey"
                             android:textSize="18dp"/>
 
@@ -290,7 +303,7 @@
                             android:scaleY="0.7"
                             android:text="Female"
                             android:padding="3dp"
-                            android:buttonTint="@color/grey_3_radio"
+                            android:buttonTint="@color/materialRed"
                             android:textColor="@color/light_grey"
                             android:textSize="18dp"/>
 
@@ -303,7 +316,7 @@
                             android:scaleY="0.7"
                             android:text="Other"
                             android:padding="3dp"
-                            android:buttonTint="@color/grey_3_radio"
+                            android:buttonTint="@color/materialRed"
                             android:textColor="@color/light_grey"
                             android:textSize="18dp"/>
 
@@ -339,8 +352,8 @@
                 app:layout_constraintTop_toBottomOf="@id/cvGstInvoice"
                 android:src="@drawable/img_passenger_info_card"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
 
+    </ScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottomBar"
@@ -364,8 +377,7 @@
             android:layout_marginLeft="30dp"
             android:textColor="@color/materialRed"
             android:drawableRight="@drawable/ic_add_with_border"
-            android:drawablePadding="10dp"
-            />
+            android:drawablePadding="10dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -376,8 +388,7 @@
             android:textSize="12sp"
             android:layout_marginLeft="30dp"
             android:textColor="@color/light_grey"
-            android:drawablePadding="10dp"
-            />
+            android:drawablePadding="10dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnProceed"

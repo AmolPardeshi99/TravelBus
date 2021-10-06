@@ -78,8 +78,8 @@
             android:layout_marginTop="4dp"
             android:src="@drawable/ic_next_arrow"
             app:layout_constraintBottom_toBottomOf="@id/tvStartingPoint"
-            app:layout_constraintEnd_toStartOf="@id/tvEndingPoint"
-            app:layout_constraintStart_toEndOf="@id/tvStartingPoint"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
             app:layout_constraintTop_toTopOf="@id/tvStartingPoint" />
 
         <TextView
@@ -108,6 +108,7 @@
             app:layout_constraintTop_toBottomOf="@id/tvStartingPoint" />
 
         <TextView
+            android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -138,7 +139,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:fontFamily="@font/montserrat"
-            android:text="Sep 22, 2021"
+            android:text="Oct 3, 2021"
             android:textColor="@color/white"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -150,7 +151,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:fontFamily="@font/montserrat"
-            android:text="Sep 22, 2021"
+            android:text="Oct 3, 2021"
             android:textColor="@color/white"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -214,13 +215,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/TopBar">
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/cvOfferCode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:strokeWidth="2dp"
+            app:strokeColor="#DBDCDC"
             app:cardCornerRadius="8dp"
-            app:cardElevation="4dp"
-            app:cardMaxElevation="12dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -234,10 +235,13 @@
                     android:id="@+id/etOfferCode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:backgroundTint="@color/white"
                     android:fontFamily="@font/montserrat"
                     android:hint="Enter offer code"
+                    android:textColor="@color/black"
                     android:textColorHint="@color/light_grey_2"
+                    android:textCursorDrawable="@null"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -257,7 +261,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold" />
             </RelativeLayout>
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
 
         <androidx.cardview.widget.CardView
@@ -271,23 +275,31 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cvOfferCode">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
+                android:gravity="center_horizontal"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_card_credit"/>
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/ic_card_credit"
+                    app:tint="#6E7275" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:textSize="15sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="25dp"
+                    android:text="Debit, Credit Card"
                     android:textColor="@color/dark_grey"
-                    android:text="Debit, Credit Card" />
-            </LinearLayout>
+                    android:textSize="15sp" />
+            </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
@@ -303,23 +315,30 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cvOfferCode">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
+                android:gravity="center_horizontal"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/img_bhim_upi"/>
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/img_bhim_upi" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:textSize="15sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="25dp"
+                    android:text="BHIM UPI"
                     android:textColor="@color/dark_grey"
-                    android:text="Debit, Credit Card" />
-            </LinearLayout>
+                    android:textSize="15sp" />
+            </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
@@ -337,23 +356,31 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cvCreditCard">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
+                android:gravity="center_horizontal"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_banking"/>
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/ic_banking"
+                    app:tint="#6E7275" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:textSize="15sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="25dp"
+                    android:text="Net Banking"
                     android:textColor="@color/dark_grey"
-                    android:text="Debit, Credit Card" />
-            </LinearLayout>
+                    android:textSize="15sp" />
+            </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
@@ -369,24 +396,31 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cvCreditCard">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
+                android:gravity="center_horizontal"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
                     android:src="@drawable/ic_wallet"
                     app:tint="#6E7275" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:textSize="15sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="25dp"
+                    android:text="Wallets"
                     android:textColor="@color/dark_grey"
-                    android:text="Debit, Credit Card" />
-            </LinearLayout>
+                    android:textSize="15sp" />
+            </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>

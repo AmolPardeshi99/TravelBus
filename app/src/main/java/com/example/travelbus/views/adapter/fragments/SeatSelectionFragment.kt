@@ -1,5 +1,8 @@
 package com.example.travelbus.views.adapter.fragments
 
+import android.app.Dialog
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -11,8 +14,10 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.travelbus.R
 import com.example.travelbus.models.local.Seats
+import com.example.travelbus.views.adapter.adapters.BottomSheetUpiAdapter
 import com.example.travelbus.views.adapter.adapters.BusSeatAdapter
 import com.example.travelbus.views.adapter.adapters.SeatClickedListener
+import com.example.travelbus.views.adapter.adapters.SheetSeatInfoAdapter
 import com.google.firebase.firestore.SetOptions
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -32,7 +37,6 @@ class SeatSelectionFragment : Fragment(R.layout.fragment_seat_selection), SeatCl
         navController = Navigation.findNavController(view)
         getBusesData()
 
-
         setRecyclerView()
         recyclerViewBus.setOnClickListener{
             Toast.makeText(activity, "RV Clicked!", Toast.LENGTH_SHORT).show()
@@ -42,6 +46,11 @@ class SeatSelectionFragment : Fragment(R.layout.fragment_seat_selection), SeatCl
             bus_id = getString("bus_id").toString()
         }
 
+        btnSeatInfoIcon.setOnClickListener {
+            val bottomSheet = SheetSeatInfoAdapter()
+            activity?.supportFragmentManager?.let { it1 -> bottomSheet.show(it1, "ModalBottomSheet") }
+        }
+
         btnSignupFrag.setOnClickListener {
             val bundle = Bundle()
             bundle.putString("bus_id",bus_id)
@@ -49,8 +58,6 @@ class SeatSelectionFragment : Fragment(R.layout.fragment_seat_selection), SeatCl
         }
 
     }
-
-
 
     private fun setRecyclerView() {
         recyclerViewBus.layoutManager = GridLayoutManager(context, 5)
