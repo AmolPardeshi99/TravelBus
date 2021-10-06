@@ -129,9 +129,7 @@ class HomeFragment(private val clickListener: PlacesAdapter.ClickListener) : Fra
 
         cvBusHire.setOnClickListener {
             startActivity(Intent(context,BusHireActivity::class.java))
-
         }
-
         etDate.setOnClickListener {
 
         }
