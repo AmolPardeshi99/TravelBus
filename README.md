@@ -6,7 +6,7 @@
 
 # TravelBus
 
-TravelBus is BusBooking App that allows user to book or hire a bus ticket.
+TravelBus is an Indian online bus ticketing platform, providing ticket booking facility through android app.
 
 <!-- 
 # Links 
