@@ -1,20 +1,26 @@
+
+
+ ![GitHub Cards Preview](https://miro.medium.com/max/1400/1*yptKxHVCXC02cdboGtVPjw.jpeg)
+
+
+
 # TravelBus
 
 TravelBus is BusBooking App that allows user to book or hire a bus ticket.
 
-
+<!-- 
 # Links 
 
-* Blog-Post :- 
+* Blog-Post :-  -->
 
 # 🔗Open-Source Library
 
 * [Glide](https://github.com/bumptech/glide)
 * [Retrofit](https://square.github.io/retrofit/)
 * [Firebase](https://firebase.google.com/docs/auth)
-* [AutoImageSlider](https://github.com/smarteist/Android-Image-Slider)
 * [Jetpack](https://developer.android.com/jetpack)
-* [NotificationBadge](https://github.com/nex3z/NotificationBadge)
+* [Google Maps](https://developers.google.com/maps)
+* [AutoImageSlider](https://github.com/smarteist/Android-Image-Slider)
 
 # Things we used while making this application
 
